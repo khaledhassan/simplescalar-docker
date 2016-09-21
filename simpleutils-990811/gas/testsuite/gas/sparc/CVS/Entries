@@ -1,0 +1,26 @@
+/asi.d/1.1.1.1/Mon May  3 07:28:52 1999//
+/asi.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/membar.d/1.1.1.1/Mon May  3 07:28:52 1999//
+/membar.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/mism-1.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/mismatch.exp/1.1.1.1/Mon May  3 07:28:52 1999//
+/prefetch.d/1.2/Thu Jun 10 21:08:02 1999//
+/prefetch.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/rdpr.d/1.2/Thu Jun 10 21:08:03 1999//
+/rdpr.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/reloc64.d/1.2/Thu Jun 10 21:08:04 1999//
+/reloc64.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/set64.d/1.2/Thu Jun 10 21:08:05 1999//
+/set64.s/1.2/Thu Jun 10 21:08:06 1999//
+/sparc.exp/1.2/Thu Jun 10 21:08:07 1999//
+/splet-2.d/1.1.1.1/Mon May  3 07:28:52 1999//
+/splet-2.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/splet.d/1.1.1.1/Mon May  3 07:28:52 1999//
+/splet.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/synth.d/1.1.1.1/Mon May  3 07:28:52 1999//
+/synth.s/1.1.1.1/Mon May  3 07:28:52 1999//
+/synth64.d/1.2/Thu Jun 10 21:08:08 1999//
+/synth64.s/1.2/Thu Jun 10 21:08:09 1999//
+/wrpr.d/1.2/Thu Jun 10 21:08:10 1999//
+/wrpr.s/1.1.1.1/Mon May  3 07:28:52 1999//
+D

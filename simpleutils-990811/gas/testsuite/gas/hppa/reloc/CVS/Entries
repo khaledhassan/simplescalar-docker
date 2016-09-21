@@ -1,0 +1,19 @@
+/reduce2.s/1.1.1.1/Mon May  3 07:28:50 1999//
+/applybug.s/1.2/Wed Sep  1 17:56:05 1999//
+/blebug.s/1.2/Wed Sep  1 17:56:05 1999//
+/blebug2.s/1.2/Wed Sep  1 17:56:05 1999//
+/blebug3.s/1.2/Wed Sep  1 17:56:05 1999//
+/exitbug.s/1.2/Wed Sep  1 17:56:51 1999//
+/fixupbug.s/1.2/Wed Sep  1 17:56:51 1999//
+/funcrelocbug.s/1.2/Wed Sep  1 17:56:51 1999//
+/labelopbug.s/1.2/Wed Sep  1 17:56:51 1999//
+/longcall.s/1.2/Wed Sep  1 17:56:51 1999//
+/picreloc.s/1.2/Wed Sep  1 17:56:51 1999//
+/plabelbug.s/1.2/Wed Sep  1 17:56:51 1999//
+/r_no_reloc.s/1.2/Wed Sep  1 17:56:51 1999//
+/reduce.s/1.2/Wed Sep  1 17:56:51 1999//
+/reduce3.s/1.2/Wed Sep  1 17:56:51 1999//
+/reloc.exp/1.2/Wed Sep  1 17:56:51 1999//
+/roundmode.s/1.2/Wed Sep  1 17:56:51 1999//
+/selectorbug.s/1.2/Wed Sep  1 17:56:51 1999//
+D
