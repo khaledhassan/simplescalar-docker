@@ -1,0 +1,13 @@
+#
+# $Log: t-ss-gas,v $
+# Revision 1.1  1994/01/20  16:17:32  austin
+# Initial revision
+#
+#  $Id: t-ss-gas,v 1.1 1994/01/20 16:17:32 austin Exp austin $
+#
+
+# Suppress building libgcc1.a, since the SS compiler port is complete
+# and does not need anything from libgcc1.a.
+LIBGCC1 = libgcc1.null
+CROSS_LIBGCC1 = libgcc1.null
+#T_CFLAGS = -Dinhibit_libc

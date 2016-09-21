@@ -1,0 +1,4160 @@
+# 1 "libgcc2.c"
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+# 1 "tconfig.h" 1
+# 1 "config/ss/xm-ss.h" 1
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+# 1 "tm.h" 1
+# 1 "config/ss/ssbig.h" 1
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 56 "config/ss/ssbig.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+# 1 "config/ss/ss.h" 1
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+extern char    *asm_file_name;
+extern char	call_used_regs[];
+extern int	current_function_calls_alloca;
+extern int	flag_omit_frame_pointer;
+extern int	frame_pointer_needed;
+extern char    *language_string;
+extern int	may_call_alloca;
+extern int	optimize;
+extern char   **save_argv;
+extern int	target_flags;
+extern char    *version_string;
+
+ 
+
+ 
+enum cmp_type {
+  CMP_SI,				 
+  CMP_SF,				 
+  CMP_DF,				 
+  CMP_MAX				 
+};
+
+ 
+enum delay_type {
+  DELAY_NONE,				 
+  DELAY_LOAD,				 
+  DELAY_HILO,				 
+  DELAY_FCMP				 
+};
+
+ 
+
+
+
+
+enum processor_type {
+  PROCESSOR_DEFAULT,
+  PROCESSOR_R3000,
+  PROCESSOR_R6000,
+  PROCESSOR_R4000
+};
+
+ 
+
+
+ 
+
+enum ss_abicalls_type {
+  SS_ABICALLS_NO,
+  SS_ABICALLS_YES
+};
+
+ 
+
+
+ 
+
+
+enum block_move_type {
+  BLOCK_MOVE_NORMAL,			 
+  BLOCK_MOVE_NOT_LAST,			 
+  BLOCK_MOVE_LAST			 
+};
+
+extern char ss_reg_names[][8];	 
+extern char ss_print_operand_punct[];	 
+extern char *current_function_name;	 
+extern char *current_function_file;	 
+extern int num_source_filenames;	 
+extern int inside_function;		 
+extern int ignore_line_number;		 
+extern int file_in_function_warning;	 
+extern int sdb_label_count;		 
+extern int ss_section_threshold;	 
+extern int g_switch_value;		 
+extern int g_switch_set;		 
+extern int sym_lineno;			 
+extern int set_noreorder;		 
+extern int set_nomacro;			 
+extern int set_noat;			 
+extern int set_volatile;		 
+extern int ss_branch_likely;		 
+extern int ss_dbx_regno[];		 
+extern char ss_rtx_classify[];	 
+extern struct rtx_def *branch_cmp[2];	 
+extern enum cmp_type branch_type;	 
+extern enum processor_type ss_cpu;	 
+extern enum ss_abicalls_type ss_abicalls; 
+extern int ss_isa;			 
+extern char *ss_cpu_string;		 
+extern char *ss_isa_string;		 
+extern int dslots_load_total;		 
+extern int dslots_load_filled;		 
+extern int dslots_jump_total;		 
+extern int dslots_jump_filled;		 
+extern int dslots_number_nops;		 
+extern int num_refs[3];			 
+extern struct rtx_def *ss_load_reg;	 
+extern struct rtx_def *ss_load_reg2;	 
+extern struct rtx_def *ss_load_reg3;	 
+extern struct rtx_def *ss_load_reg4;	 
+
+ 
+
+extern void		abort_with_insn ();
+extern int		arith32_operand ();
+extern int		arith_operand ();
+extern int		cmp_op ();
+extern int		cmp2_op ();
+extern long		compute_frame_size ();
+extern int		epilogue_reg_mentioned_p ();
+extern void		expand_block_move ();
+extern int		equality_op ();
+extern int		fcmp_op ();
+extern void		final_prescan_insn ();
+extern int		fpsw_register_operand ();
+extern struct rtx_def *	function_arg ();
+extern void		function_arg_advance ();
+extern int		function_arg_partial_nregs ();
+extern void		function_epilogue ();
+extern void		function_prologue ();
+extern void		gen_conditional_branch ();
+extern struct rtx_def * gen_int_relational ();
+extern void		init_cumulative_args ();
+extern int		large_int ();
+extern int		md_register_operand ();
+extern int		ss_address_cost ();
+extern void		ss_asm_file_end ();
+extern void		ss_asm_file_start ();
+extern int		ss_const_double_ok ();
+extern void		ss_count_memory_refs ();
+extern int		ss_debugger_offset ();
+extern void		ss_declare_object ();
+extern int		ss_epilogue_delay_slots ();
+extern void		ss_expand_epilogue ();
+extern void		ss_expand_prologue ();
+extern char	       *ss_fill_delay_slot ();
+extern char	       *ss_move_1word ();
+extern char	       *ss_move_2words ();
+extern void		ss_output_double ();
+extern int		ss_output_external ();
+extern void		ss_output_float ();
+extern void		ss_output_filename ();
+extern void		ss_output_lineno ();
+extern char	       *output_block_move ();
+extern void		override_options ();
+extern int		pc_or_label_operand ();
+extern void		print_operand_address ();
+extern void		print_operand ();
+extern void		print_options ();
+extern int		reg_or_0_operand ();
+extern int		simple_epilogue_p ();
+extern int		simple_memory_operand ();
+extern int		small_int ();
+extern void		trace();
+extern int		uns_arith_operand ();
+extern int		uns_cmp_op ();
+
+ 
+extern int		address_operand ();
+extern int		const_double_operand ();
+extern int		const_int_operand ();
+extern int		general_operand ();
+extern int		immediate_operand ();
+extern int		memory_address_p ();
+extern int		memory_operand ();
+extern int		nonimmediate_operand ();
+extern int		nonmemory_operand ();
+extern int		register_operand ();
+extern int		scratch_operand ();
+
+ 
+extern void		data_section ();
+extern void		rdata_section ();
+extern void		readonly_data_section ();
+extern void		sdata_section ();
+extern void		text_section ();
+
+ 
+extern void		abort_with_insn ();
+extern void		debug_rtx ();
+extern void		fatal_io_error ();
+extern int		get_frame_size ();
+extern int		offsettable_address_p ();
+extern void		output_address ();
+extern char	       *permalloc ();
+extern int		reg_mentioned_p ();
+
+ 
+extern int		atoi ();
+extern char	       *getenv ();
+extern char	       *mktemp ();
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+
+
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+
+
+
+
+
+					 
+
+
+
+
+					 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					 
+
+
+					 
+
+
+					 
+
+
+					 
+
+
+					 
+
+
+					 
+
+
+					 
+
+
+
+					 
+
+
+ 
+
+
+
+
+
+
+# 396 "config/ss/ss.h"
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 500 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+# 521 "config/ss/ss.h"
+
+
+ 
+
+
+
+# 535 "config/ss/ss.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+# 595 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+# 615 "config/ss/ss.h"
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+# 646 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+# 672 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 849 "config/ss/ss.h"
+
+
+# 861 "config/ss/ss.h"
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 899 "config/ss/ss.h"
+
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+extern char ss_hard_regno_mode_ok[][67 ];
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+enum reg_class
+{
+  NO_REGS,			 
+  GR_REGS,			 
+  FP_REGS,			 
+  HI_REG,			 
+  LO_REG,			 
+  MD_REGS,			 
+  ST_REGS,			 
+  ALL_REGS,			 
+  LIM_REG_CLASSES		 
+};
+
+
+
+
+
+ 
+
+
+
+
+# 1351 "config/ss/ss.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+# 1374 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+extern enum reg_class ss_regno_to_class[];
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+extern enum reg_class ss_char_to_class[];
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1461 "config/ss/ss.h"
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+struct ss_frame_info
+{
+  long total_size;		 
+  long var_size;		 
+  long args_size;		 
+  long extra_size;		 
+  int  gp_reg_size;		 
+  int  fp_reg_size;		 
+  long mask;			 
+  long fmask;			 
+  long gp_save_offset;		 
+  long fp_save_offset;		 
+  long gp_sp_offset;		 
+  long fp_sp_offset;		 
+  int  initialized;		 
+  int  num_gp;			 
+  int  num_fp;			 
+};
+
+extern struct ss_frame_info current_frame_info;
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 1682 "config/ss/ss.h"
+
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+# 1721 "config/ss/ss.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+typedef struct ss_args {
+  int gp_reg_found;		 
+  int arg_number;		 
+  int arg_words;		 
+  int num_adjusts;		 
+				 
+				 
+
+
+  struct rtx_def *adjust[4 *2];
+} CUMULATIVE_ARGS;
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+# 1929 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+# 1997 "config/ss/ss.h"
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+# 2029 "config/ss/ss.h"
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+# 2058 "config/ss/ss.h"
+
+ 
+
+
+# 2070 "config/ss/ss.h"
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2271 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2375 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2440 "config/ss/ss.h"
+
+
+ 
+
+
+
+ 
+
+
+ 
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+# 2568 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2679 "config/ss/ss.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 2806 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+# 2977 "config/ss/ss.h"
+
+ 
+
+
+# 2992 "config/ss/ss.h"
+
+ 
+
+
+
+
+
+
+
+
+# 3072 "config/ss/ss.h"
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 3156 "config/ss/ss.h"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+
+# 3279 "config/ss/ss.h"
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+# 3301 "config/ss/ss.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+# 3466 "config/ss/ss.h"
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+# 3525 "config/ss/ss.h"
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+# 3552 "config/ss/ss.h"
+
+
+# 3571 "config/ss/ss.h"
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+extern void ss_init();
+
+ 
+int ss_constant_alignment( );
+int ss_data_alignment( );
+
+ 
+extern int ss_max_alignment;
+extern char *ss_max_align_string;
+extern int ss_stack_alignment;
+extern char *ss_stack_align_string;
+
+ 
+extern char *ss_inc_dec_opt_string;
+
+
+
+
+
+
+extern int ss_inc_dec_opt;
+
+ 
+
+
+
+
+
+
+
+ 
+void RtxTypeWarning(char *fmt, ...);
+# 103 "config/ss/ssbig.h" 2
+
+# 1 "tm.h" 2
+
+# 57 "config/ss/xm-ss.h" 2
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+# 1 "tconfig.h" 2
+
+# 33 "libgcc2.c" 2
+
+# 1 "machmode.h" 1
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+enum machine_mode {
+# 1 "machmode.def" 1
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ VOIDmode , 
+
+ QImode , 		 
+ HImode , 
+ 
+
+
+ PSImode , 
+ SImode , 
+ PDImode , 
+ DImode , 
+ TImode , 
+ OImode , 
+
+ QFmode , 
+ HFmode , 
+ TQFmode ,    
+ SFmode , 
+ DFmode , 
+ XFmode ,     
+ TFmode , 
+
+ 
+ SCmode , 
+ DCmode , 
+ XCmode , 
+ TCmode , 
+
+ CQImode , 
+ CHImode , 
+ CSImode , 
+ CDImode , 
+ CTImode , 
+ COImode , 
+
+ 
+
+ BLKmode , 
+
+ 
+
+
+
+
+
+ CCmode , 
+
+ 
+
+
+ 
+
+
+
+
+
+# 71 "machmode.h" 2
+
+
+
+  CC_EQmode, CC_FPmode, CC_0mode, CC_REV_FPmode ,
+
+MAX_MACHINE_MODE };
+
+
+
+
+
+
+
+
+
+ 
+
+extern char *mode_name[];
+
+
+enum mode_class { MODE_RANDOM, MODE_INT, MODE_FLOAT, MODE_PARTIAL_INT, MODE_CC,
+		  MODE_COMPLEX_INT, MODE_COMPLEX_FLOAT, MAX_MODE_CLASS};
+
+ 
+
+
+extern enum mode_class mode_class[];
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+extern int mode_size[];
+
+
+ 
+
+extern int mode_unit_size[];
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+extern enum machine_mode mode_wider_mode[];
+
+
+ 
+
+
+
+extern enum machine_mode mode_for_size  (unsigned int, enum mode_class, int)  ;
+
+ 
+
+extern enum machine_mode get_best_mode  (int, int, int, enum machine_mode, int)  ;
+
+ 
+
+
+
+
+
+ 
+
+extern enum machine_mode class_narrowest_mode[];
+
+
+ 
+
+
+extern enum machine_mode byte_mode;
+extern enum machine_mode word_mode;
+extern enum machine_mode ptr_mode;
+
+
+# 34 "libgcc2.c" 2
+
+# 1 "defaults.h" 1
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+# 42 "defaults.h"
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+# 70 "defaults.h"
+
+
+ 
+
+# 111 "defaults.h"
+
+
+
+   
+
+
+
+
+
+
+
+
+ 
+# 134 "defaults.h"
+
+
+ 
+
+
+
+
+
+
+
+# 35 "libgcc2.c" 2
+
+
+# 1 "/export/home/mark/simplescalar/ssbig-na-sstrix/include/stddef.h" 1 3
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+ 
+
+# 55 "/export/home/mark/simplescalar/ssbig-na-sstrix/include/stddef.h" 3
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef int ptrdiff_t;
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef unsigned int size_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+typedef int wchar_t;
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+# 242 "/export/home/mark/simplescalar/ssbig-na-sstrix/include/stddef.h" 3
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+# 37 "libgcc2.c" 2
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+typedef unsigned int UQItype	__attribute__ ((mode (QI)));
+typedef 	 int SItype	__attribute__ ((mode (SI)));
+typedef unsigned int USItype	__attribute__ ((mode (SI)));
+typedef		 int DItype	__attribute__ ((mode (DI)));
+typedef unsigned int UDItype	__attribute__ ((mode (DI)));
+
+typedef 	float SFtype	__attribute__ ((mode (SF)));
+typedef		float DFtype	__attribute__ ((mode (DF)));
+
+
+
+
+
+
+
+
+typedef int word_type __attribute__ ((mode (__word__)));
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+  struct DIstruct {SItype high, low;};
+
+
+
+
+ 
+
+
+
+typedef union
+{
+  struct DIstruct s;
+  DItype ll;
+} DIunion;
+
+
+
+
+
+# 1 "longlong.h" 1
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+# 132 "longlong.h"
+
+
+# 175 "longlong.h"
+
+
+# 203 "longlong.h"
+
+
+# 242 "longlong.h"
+
+
+# 304 "longlong.h"
+
+
+# 347 "longlong.h"
+
+
+# 388 "longlong.h"
+
+
+# 407 "longlong.h"
+
+
+# 492 "longlong.h"
+
+
+# 551 "longlong.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 591 "longlong.h"
+
+
+# 710 "longlong.h"
+
+
+# 742 "longlong.h"
+
+
+# 811 "longlong.h"
+
+
+# 994 "longlong.h"
+
+
+# 1041 "longlong.h"
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1091 "longlong.h"
+
+
+
+
+
+
+
+
+
+ 
+
+# 1137 "longlong.h"
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+extern const UQItype __clz_tab[];
+
+# 1177 "longlong.h"
+
+
+
+
+
+# 123 "libgcc2.c" 2
+
+
+
+
+extern DItype __fixunssfdi (SFtype a);
+extern DItype __fixunsdfdi (DFtype a);
+
+
+
+
+
+
+
+# 154 "libgcc2.c"
+
+
+# 186 "libgcc2.c"
+
+
+# 218 "libgcc2.c"
+
+
+# 251 "libgcc2.c"
+
+
+# 272 "libgcc2.c"
+
+
+
+DItype
+__muldi3 (u, v)
+     DItype u, v;
+{
+  DIunion w;
+  DIunion uu, vv;
+
+  uu.ll = u,
+  vv.ll = v;
+
+  w.ll = ({DIunion __w;	__asm__ ("multu %2,%3"	: "=l" ((USItype)(  __w.s.low )),	"=h" ((USItype)( __w.s.high ))	: "d" ((USItype)(   uu.s.low  )),	"d" ((USItype)(    vv.s.low  ))) ;	__w.ll; }) ;
+  w.s.high += ((USItype) uu.s.low * (USItype) vv.s.high
+	       + (USItype) uu.s.high * (USItype) vv.s.low);
+
+  return w.ll;
+}
+
+
+# 399 "libgcc2.c"
+
+
+
+
+
+
+
+# 641 "libgcc2.c"
+
+
+# 670 "libgcc2.c"
+
+
+# 697 "libgcc2.c"
+
+
+# 711 "libgcc2.c"
+
+
+# 721 "libgcc2.c"
+
+
+# 742 "libgcc2.c"
+
+
+# 763 "libgcc2.c"
+
+
+# 796 "libgcc2.c"
+
+
+# 807 "libgcc2.c"
+
+
+# 840 "libgcc2.c"
+
+
+# 851 "libgcc2.c"
+
+
+# 884 "libgcc2.c"
+
+
+# 895 "libgcc2.c"
+
+
+# 931 "libgcc2.c"
+
+
+# 941 "libgcc2.c"
+
+
+# 965 "libgcc2.c"
+
+
+# 989 "libgcc2.c"
+
+
+# 1013 "libgcc2.c"
+
+
+# 1085 "libgcc2.c"
+
+
+# 1108 "libgcc2.c"
+
+
+# 1131 "libgcc2.c"
+
+
+# 1153 "libgcc2.c"
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1193 "libgcc2.c"
+
+
+# 1413 "libgcc2.c"
+
+
+# 1434 "libgcc2.c"
+
+
+# 1637 "libgcc2.c"
+
+
+ 
+
+
+# 1675 "libgcc2.c"
+
+
+# 1695 "libgcc2.c"
+
+
+# 1745 "libgcc2.c"
+
+
+# 1765 "libgcc2.c"
+
+
+# 1786 "libgcc2.c"
+
+
+ 
+
+# 1801 "libgcc2.c"
+
+
+# 1916 "libgcc2.c"
+
+
+# 2081 "libgcc2.c"
+
+
+# 2155 "libgcc2.c"
+
+
+# 2178 "libgcc2.c"
+
+
+# 2213 "libgcc2.c"
+
+
+# 2448 "libgcc2.c"
+
+
+# 2473 "libgcc2.c"
+

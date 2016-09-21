@@ -1,0 +1,3 @@
+#
+./xgcc -B./ -O2 -DCROSS_COMPILE -DIN_GCC -DSVR4 -g -I./include -g1 -I. -I. -I./config -c -DL_muldi3 ./libgcc2.c -o _muldi3.o
+

@@ -1,0 +1,13 @@
+# We are building for the Linux C library 5.
+T_CFLAGS = -DUSE_GNULIBC_1
+
+# Don't make libgcc1.a
+LIBGCC1 =
+CROSS_LIBGCC1 =
+# On Linux we can print long double
+ENQUIRE_CFLAGS = -DNO_MEM -O0
+# Don't install "assert.h" in gcc. We use the one in glibc.
+INSTALL_ASSERT_H =
+
+# Compile libgcc2.a with pic.
+TARGET_LIBGCC2_CFLAGS = -fPIC

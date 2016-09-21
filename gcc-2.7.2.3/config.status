@@ -1,0 +1,4 @@
+#!/bin/sh
+# GCC was configured as follows:
+./configure --target=ssbig-na-sstrix --with-gnu-as --with-gnu-ld --prefix=/usr/local/ss
+echo host=sparc-sun-solaris2.5.1 target=ssbig-na-sstrix build=sparc-sun-solaris2.5.1
