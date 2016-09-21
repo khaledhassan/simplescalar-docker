@@ -1,0 +1,174 @@
+<html>
+<title>SimpleScalar Installation Instructions</title>
+<h1>SimpleScalar Installation Instructions</h1>
+<body>
+<a href = 'http://www.cse.iitd.ac.in/~cs5070217'> Home </a><br><br>
+
+The following are the instructions to setup the simplescalar toolset on linux system. I have tested them on ubuntu 10.04 i686 and x86_64 machine with gcc 4.4.3.<br>
+You can either set it up on your ubuntu installation on your pc or set it up on your account in gcl.<br>
+If you want to try out the simulator without taking the pain of installation, you can append the following paths to the PATH environmental variable in your gcl account:<br>
+<br>
+<i>export PATH=$PATH:/home/dual/cs5070217/simplescalar/bin</i><br>
+<i>export PATH=$PATH:/home/dual/cs5070217/simplescalar/simplesim-3.0</i><br>
+But it is highly recommended that you install it right away as the assignments will focus on editing the source code of the simulator.<br><br>
+<hr>
+<br>
+<p>1. Necessary Files:
+<br>
+<dd>Download the necessary Source code files:
+<br>
+<ul>
+<li><a href = "../simpletools-2v0.tgz"> simpletools-2v0.tgz </a>
+<br>
+<li><a href = "../simplesim-3v0d.tgz"> simplesim-3v0d.tgz </a>
+<br>
+<li><a href = "../simpleutils-990811.tar.gz"> simpleutils-990811.tar.gz </a>
+<br>
+<li><a href = "../gcc-2.7.2.3.ss.tar.gz"> gcc-2.7.2.3.ss.tar.gz </a>
+<br>
+<li><a href = "../ar_and_ranlib.tar.gz"> ar_and_ranlib.tar.gz </a>
+<br>
+</ul>
+</dd>
+<hr>
+<p>2. Setting up the Environment:
+<br>
+<dd>
+<ul>
+<li>Find out the machine hardware name by running the following command on the terminal:
+<br>
+<i>uname -m</i>
+<br>
+<li>Use this to set the HOST environment variable as i686-pc-linux or i386-pc-linux etc. Even if you have a 64 bit machine (machine name x86_64) use i686 itself. We will be using it as 32 bit installation even on the 64 bit machine.
+<br>
+Now set the following three environmental variables:
+<br>
+<i>export HOST=FROM_ABOVE_OPTION</i><br>
+<i>export IDIR=&lt;Installation_directory_for_simplescalar, for instance /home/kapil/simplescalar&gt;</i><br>
+<i>export TARGET=sslittle-na-sstrix</i><br>
+<li>Create the installation directory, i.e. $IDIR and copy All the installations files downloaded into the same<br>
+<i>mkdir $IDIR</i><br>
+<font size='4' color='green'>
+Make sure you have the following packages installed on your system.<br>
+<ul>
+<li><i>flex</i><br>
+<li><i>bison</i><br>
+<li><i>build-essential</i><br>
+</ul>
+You can install these packages using :<br>
+<i>sudo apt-get install &lt;PACKAGE NAME&gt;</i><br>
+</font
+><br>
+</dd>
+</ul>
+<hr>
+<p>3. Installing simpletools:
+<br>
+<dd>
+<ul>
+<li>Unpack the compressed file and remove the gcc folder(older version, we'll be using a newer one)
+<br>
+<i>cd $IDIR</i><br>
+<i>tar xzvf simpletools-2v0.tgz</i><br>
+<i>rm -rf gcc-2.6.3</i><br>
+</dd>
+<hr>
+<p>4. Installing simpleutils:<br>
+<dd>
+<ul>
+<li>Unpack the package:<br>
+<i> tar xzvf simpleutils-990811.tar.gz</i><br>
+<i> cd simpleutils-990811</i><br>
+<li>Now one change in the code needs to be done:<br>
+<li>In the file <b>ld/ldlex.l</b> change all occurrences of yy_current_buffer with YY_CURRENT_BUFFER<br>
+<li>Install using following commands:<br>
+<i> ./configure -host=$HOST -target=$TARGET -with-gnu-as -with-gnu-ld -prefix=$IDIR</i><br>
+<i> make</i><br>
+<i> make install</i><br>
+</dd>
+</ul>
+<hr>
+<p>5. Installing simulator:<br>
+<dd>
+<ul>
+<li> Unpack the simulator:<br>
+<i>cd $IDIR</i><br>
+<i>tar xzvf simplesim-3v0d.tgz</i><br>
+<i>cd simplesim-3.0</i><br>
+<i>make config-pisa</i><br>
+<i>make</i><br>
+<p>Congratulations! You have installed the simulator. The battle is half won.<br>
+<li>Test your installation by running a sample program:<br>
+<i>./sim-safe tests/bin.little/test-math</i><br>
+</dd>
+</ul>
+<hr>
+<p>6. Installing the cross compiler:<br>
+<dd>
+<ul>
+<li> Unpack the compiler and append the path to sslittle-na-sstrix/bin to the environmental variable PATH<br>
+<i>cd $IDIR</i><br>
+<i>tar xzvf gcc-2.7.2.3.ss.tar.gz</i><br>
+<i>cd gcc-2.7.2.3</i><br>
+<i>export PATH=$PATH:/home/YOUR_USER_NAME/simplescalar/sslittle-na-sstrix/bin</i><br>
+<i>./configure -host=$HOST -target=$TARGET -with-gnu-as -with-gnu-ld -prefix=$IDIR</i><br>
+<dd>
+<li>Change permissions to edit the files:<br>
+<i>chmod -R +w .</i><br>
+<li>Next, you need to do some changes in the code:
+<li>Change the line number 130 of the <b>Makefile</b> to:<br> 
+<i>GCC_CFLAGS=$(INTERNAL_CFLAGS) $(X_CFLAGS) $(T_CFLAGS) $(CFLAGS) -I./include -I/usr/include</i><br>
+i.e., add <i>-I/usr/include</i> towards the end of the line<br>
+<li>At line number 60 of <b>protoize.c</b> change <pre>varargs.h</pre> to <pre>stdarg.h</pre><br>
+<font color='green'>
+<li>At line number 341 of <b>obstack.h</b> change <pre>*((void **)__o-&gt;next_free<strong>)++</strong>=((void *)datum); <strong>
+</strong></pre>
+<p>to</p>
+<pre>*((void **)__o-&gt;next_free<strong>++)</strong>=((void *)datum);</pre>
+<br>
+</font>
+</dd>
+<li>Now copy the following files as shown:<br>
+<i>cp ./patched/sys/cdefs.h ../sslittle-na-sstrix/include/sys/cdefs.h</i><br>
+<i>cp ../sslittle-na-sstrix/lib/libc.a ../lib/</i><br>
+<i>cp ../sslittle-na-sstrix/lib/crt0.o ../lib/</i><br>
+<p><em>*If you dont find the patched directory and libc.a/crt0.o, you probably didnt untar it properly. Use 'tar' on command-line again.</em></p>
+<br>
+<li>Download the <a href = "ar_and_ranlib.tar.gz"> ar_and_ranlib.tar.gz </a> file and extract it.<br>
+<li>Replace the <i>ar</i> and <i>ranlib</i> file in <i>$IDIR/sslittle-na-sstrix/bin</i> with the above extracted files.<br>
+You might need to set appropriate permissions for these files. You can do that by:<br>
+<i>chmod +w &lt;filename&gt;</i><br>
+<li>Compile using:<br>
+<i>make</i><br>
+<li>Now in the file <b>insn-output.c</b>, change line 675, 750 and 824 from 
+<pre>return "FIXME\n</pre>
+<p>to</p>
+<pre>return "FIXME\n\</pre>
+<li>Compile again<br>
+<i>LANGUAGES="c c++" CFLAGS="-O" CC="gcc -m32"</i><br>
+<li>At line number 35 of the file objc/sendmsg.c add:<br>
+<i>#define STRUCT_VALUE 0</i><br>
+<li> Run  the following commands:<br>
+<i>cd $IDIR/gcc-2.7.2.3</i><br>
+<i>make LANGUAGES="c c++" CFLAGS="-O" CC="gcc -m32"</i><br>
+<li>Now edit the generated cxxmain.c file and remove line number 2978-2979<br>
+i.e. Remove<br>
+<i>char * malloc ()</i><br>
+<i>char * realloc ()</i><br>
+<li>Lastly, pray for the good health of Dr. Todd Austin and run the final commands:<br>
+<i>make LANGUAGES="c c++" CFLAGS="-O" CC="gcc -m32"</i><br>
+<i>make install  LANGUAGES="c c++" CFLAGS="-O" CC="gcc -m32"</i><br>
+
+This should set up your system for running the simplescalar toolset.<br>
+<li>Last piece of advice, add the cross-compiler bin path permanently to the PATH environmental variable by editing your .bashrc as:<br>
+<i>export PATH=$PATH:&lt; simplescalar installation path &gt;/bin</i><br>
+<i>export PATH=$PATH:&lt; simplescalar installation path &gt;/simplesim-3.0</i><br>
+</dd>
+</ul>
+<hr>
+<dd>
+I hope these instructions are exhaustive enough. Still, if you get stuck somewhere, do not hesitate to google out the solution.<br><br>
+Instructions: courtesy <a href="http://www.igoy.in/simplescalar-installation-made-simple/">igoy.in</a><br><br>
+
+</body>
+<html>
