@@ -1,0 +1,8 @@
+CC=$(sysdep_dir)/../../bin/ss*-na-sstrix-gcc
+BUILD_CC=$(sysdep_dir)/../../bin/ss*-na-sstrix-gcc
+AR=$(sysdep_dir)/../../bin/ss*-na-sstrix-ar
+RANLIB=$(sysdep_dir)/../../bin/ss*-na-sstrix-ranlib
+CROSS_EXEC=$(sysdep_dir)/../../simplesim-2.0/sim-safe
+sysincludedir=$(sysdep_dir)/unix/bsd/sstrix
+export sysincludedir := $(sysincludedir)
+CFLAGS=-g -O3

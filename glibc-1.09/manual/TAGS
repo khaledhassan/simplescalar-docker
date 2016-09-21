@@ -1,0 +1,522 @@
+
+summary.awk,0
+
+move-if-change,0
+
+libc.texinfo,205
+				 programs 197,8955
+				 functions 210,9516
+Programming 388,17729
+Program Arguments713,32968
+Program Termination729,33684
+                                 functions 736,34044
+Functions 777,36156
+
+intro.texi,367
+programs.8,330
+functions,132,6018
+functions 181,8083
+                                 programs.213,9322
+functions;227,9959
+program has 244,10900
+program needs 294,13083
+program runs-318,14252
+function call.323,14607
+function isn'327,14760
+function doesn'338,15204
+function that 403,17303
+functions 450,19404
+functionality 549,22476
+functions.710,28682
+
+errno.texi,145
+program should 15,597
+function call,67,3026
+Function not 632,21595
+functions 751,26551
+             program_invocation_short_name,768,26887
+
+memory.texi,232
+				 programs 142,5795
+programs,413,15479
+program use 414,15549
+functions.498,18934
+				 functions 694,25379
+function without 936,34471
+function name 938,34623
+functions.953,35014
+functions 1068,39730
+functions 1072,40016
+
+ctype.texi,33
+Programs 4,106
+functions 7,312
+
+string.texi,187
+function can 9,466
+functions 19,1016
+programmers.42,1991
+Functions 110,5350
+functions 125,6297
+function might 195,9079
+Functions}202,9440
+functions 404,16768
+functions 558,22852
+
+mbyte.texi,143
+programs 43,1945
+functions 80,3384
+function should 281,11554
+functions 357,14755
+function converts 364,15029
+function converts 403,16465
+
+locale.texi,10475
+to adapt to the user's favorite conventions.  In ANSI C,12,457
+to adapt to the user's favorite conventions.  In ANSI C,12,457
+to adapt to the user's favorite conventions.  In ANSI C,12,457
+to adapt to the user's favorite conventions.  In ANSI C,12,457
+to adapt to the user's favorite conventions.  In ANSI C,12,457
+to adapt to the user's favorite conventions.  In ANSI C,12,457
+The user chooses a set of conventions by specifying a locale 15,653
+interpreted 44,1817
+considered alphabetic, and upper- and lower-case conversion conventions48,1933
+The collating sequence for the local language and character set52,2042
+Formatting of dates and times 59,2195
+(The C library doesn't yet help you implement this.)63,2327
+(The C library doesn't yet help you implement this.)63,2327
+(The C library doesn't yet help you implement this.)63,2327
+(The C library doesn't yet help you implement this.)63,2327
+(The C library doesn't yet help you implement this.)63,2327
+(The C library doesn't yet help you implement this.)70,2506
+(The C library doesn't yet help you implement this.)70,2506
+(The C library doesn't yet help you implement this.)70,2506
+(The C library doesn't yet help you implement this.)70,2506
+(The C library doesn't yet help you implement this.)70,2506
+output in the user's favorite language is to program this more or less81,3051
+output in the user's favorite language is to program this more or less81,3051
+output in the user's favorite language is to program this more or less81,3051
+output in the user's favorite language is to program this more or less81,3051
+output in the user's favorite language is to program this more or less81,3051
+output in the user's favorite language is to program this more or less81,3051
+by hand.82,3122
+using, and so do their names.  We can't make any promises about what99,3873
+using, and so do their names.  We can't make any promises about what99,3873
+using, and so do their names.  We can't make any promises about what99,3873
+using, and so do their names.  We can't make any promises about what99,3873
+using, and so do their names.  We can't make any promises about what99,3873
+using, and so do their names.  We can't make any promises about what99,3873
+draft of the POSIX.2 standard, but it's not listed in draft 11.  Do we166,6151
+draft of the POSIX.2 standard, but it's not listed in draft 11.  Do we166,6151
+draft of the POSIX.2 standard, but it's not listed in draft 11.  Do we166,6151
+draft of the POSIX.2 standard, but it's not listed in draft 11.  Do we166,6151
+draft of the POSIX.2 standard, but it's not listed in draft 11.  Do we166,6151
+draft of the POSIX.2 standard, but it's not listed in draft 11.  Do we166,6151
+@deftypefun {char *} setlocale 220,7779
+individual purpose 226,8094
+calls, so you should make a copy of the string 234,8463
+@code{236,8595
+don't make any promises about what it looks like.  But if you specify246,9068
+The empty name stands for a site-specific default locale.  It's supposed316,11283
+the system administrator at your site 321,11508
+we don't discuss that here.323,11648
+@deftypefun {struct lconv *} localeconv 346,12544
+You shouldn't modify the structure or its contents.  The structure might351,12774
+                                 amount of money 371,13532
+* Sign of Money Amount::        How to print the 372,13598
+@code{396,14558
+Successive numbers 408,15019
+groups 409,15088
+of 2 digits 420,15664
+These are small integers indicating how many fractional digits 432,16083
+international and local formats, respectively.434,16225
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say438,16392
+fractional digits.440,16531
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+that country's currency when it is necessary to indicate the country456,17209
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+when dealing with international currencies it's important to specify460,17365
+that one is dealing with 461,17434
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+(the empty string), meaning ``unspecified''.  The ANSI standard doesn't471,17844
+followed by a one-character separator 482,18362
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say498,19073
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+currency symbol before the amount.  That's right for most countries.500,19213
+We can only guess which of these 509,19631
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+@code{CHAR_MAX}, meaning ``unspecified''.  The ANSI standard doesn't say523,20279
+one 525,20424
+the sign 547,21408
+These are strings used to indicate positive 552,21514
+These are strings used to indicate positive (or zero) and negative552,21514
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+The ANSI standard doesn't say what to do when you find this value; we558,21745
+@samp{-} instead.562,22028
+respectively.569,22296
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+The ANSI standard doesn't say what you should do when the value is594,22923
+
+search.texi,41
+function is 81,2917
+Functions}131,5234
+
+pattern.texi,32
+@deftypefun int fnmatch 27,951
+
+io.texi,122
+functions 20,733
+program needs 89,3483
+functions 98,3947
+functions 104,4372
+programmer 116,4997
+Functions 312,13751
+
+stdio.texi,465
+programs 202,8531
+functions,358,14611
+functions)669,26007
+Functions}1400,54359
+function that 1472,57403
+function that 1731,64977
+                                         functions 1748,65837
+function to 1899,72048
+functions)1968,74555
+programmers 2007,76699
+functions.2474,95083
+programs 2957,114847
+function make 3145,121886
+programmed 3425,132081
+                                 functions}3433,132425
+functions 3452,133359
+functions,3597,138410
+
+llio.texi,190
+functions 365,12791
+functions 448,16192
+program until 837,31300
+program uses 936,35580
+function blocks 964,36657
+program in 1144,42827
+program may 1245,46300
+program that 1638,60183
+
+filesys.texi,164
+functions 7,278
+function also 327,11614
+program is 1188,41394
+program clean,1414,48320
+function would 1457,50240
+Programs 1461,50388
+program runs 1594,55012
+
+pipe.texi,363
+handled in a first-in, first-out 7,243
+* Pipe Atomicity::		When pipe 34,1527
+processes 47,2017
+@deftypefun int pipe 57,2305
+for the reading and writing ends of the pipe 59,2423
+uses the @code{fork} function 81,3162
+or output channel), and @code{99,3840
+@deftypefun {FILE *} popen 108,4198
+@deftypefun int pclose 131,5310
+@deftypefun int mkfifo 168,6634
+
+socket.texi,225
+functions 223,8613
+functions 250,10025
+Programs 641,24133
+functions 944,36265
+function to 1026,38812
+functions,1128,42682
+program must 1588,59026
+function to 1659,61412
+program name 2441,90894
+functions,2713,100284
+
+terminal.texi,73
+Programs 807,28979
+program tries 1338,47628
+program output 1407,50124
+
+math.texi,26
+function fails,330,12083
+
+arith.texi,40
+functions,63,2441
+functions 341,12971
+
+time.texi,146
+Functions 12,339
+Functions 16,426
+Functions 20,527
+functions 283,10118
+function returns 417,14852
+functions.521,18557
+functions 1060,37474
+
+setjmp.texi,98
+functions.10,418
+function definition,132,5640
+function containing 167,7051
+functions 178,7607
+
+signal.texi,465
+function and 18,800
+functions 106,4199
+program incurs 253,11335
+program error 480,20245
+functions 1116,43874
+program image.1287,50473
+program that 1445,56186
+program checks 1714,65314
+function that 1757,67188
+program was 1772,67854
+functions 1800,69269
+function is 2055,79896
+program types 2076,80625
+program that 2337,90963
+functions 2380,92698
+functions:2957,113267
+                                 functions.2963,113514
+function is 3012,115143
+
+startup.texi,186
+program can 47,1838
+program accept 303,11188
+function to 639,23805
+                                 functions 656,24571
+Functions 680,25384
+functions 681,25456
+programs 759,28863
+
+child.texi,117
+programs 60,2720
+program should 133,6043
+function of 274,10872
+function returns 457,18559
+function is 547,21624
+
+job.texi,128
+programs 37,1574
+functions,183,8673
+functions 584,23032
+functions-928,33326
+programs 1103,39783
+function since 1140,41123
+
+users.texi,139
+program needs 127,5584
+program itself 138,6183
+program to 159,7280
+program itself.473,17959
+functions 769,26970
+functions.1000,35217
+
+sysinfo.texi,19
+program is 20,681
+
+conf.texi,49
+entry of 443,15539
+function robustly 795,27590
+
+lang.texi,103
+program is 271,11255
+function typically 307,12806
+functions:475,19650
+function prototype,575,23370
+
+header.texi,0
+
+maint.texi,87
+function call,219,9211
+functions,256,10998
+functions 341,14478
+functions 593,25145
+
+lgpl.texinfo,62
+program and 82,3786
+functions 276,13219
+programs 453,21771
+
+examples/stpcpy.c,11
+main 4,25
+
+examples/strncat.c,30
+#define SIZE 4,40
+main 8,84
+
+examples/search.c,126
+struct critter7,104
+int count = sizeof 31,560
+critter_cmp 38,695
+print_critter 47,852
+find_critter 57,1007
+main 73,1315
+
+examples/rprintf.c,52
+  } Widget;9,106
+print_widget 13,139
+main 37,644
+
+examples/memopen.c,11
+main 6,58
+
+examples/memstrm.c,11
+main 4,24
+
+examples/select.c,33
+input_timeout 7,90
+main 25,536
+
+examples/dir.c,12
+main 9,113
+
+examples/pipe.c,57
+read_from_pipe 9,159
+write_to_pipe 22,369
+main 32,549
+
+examples/popen.c,30
+write_data 5,46
+main 19,279
+
+examples/mkfsock.c,25
+make_named_socket 9,128
+
+examples/mkisock.c,18
+make_socket 7,93
+
+examples/isockadr.c,21
+init_sockaddr 8,113
+
+examples/inetcli.c,109
+#define PORT	10,169
+#define MESSAGE	11,188
+#define SERVERHOST 12,239
+write_to_server 15,291
+main 29,486
+
+examples/inetsrv.c,82
+#define PORT	10,169
+#define MAXMSG	11,187
+read_from_client 14,211
+main 38,619
+
+examples/filesrv.c,57
+#define SERVER	7,103
+#define MAXMSG	8,138
+main 11,162
+
+examples/filecli.c,104
+#define SERVER	8,123
+#define CLIENT	9,158
+#define MAXMSG	10,189
+#define MESSAGE	11,208
+main 14,263
+
+examples/termios.c,61
+reset_input_mode 11,188
+set_input_mode 17,279
+main 44,908
+
+examples/strftim.c,30
+#define SIZE 4,38
+main 7,60
+
+examples/setjmp.c,57
+abort_to_main_loop 8,86
+main 14,158
+do_command 25,290
+
+examples/sigh1.c,50
+catch_alarm 10,229
+do_stuff 17,309
+main 23,386
+
+examples/sigusr.c,57
+synch_signal 12,221
+child_function 19,324
+main 33,586
+
+examples/testopt.c,11
+main 6,56
+
+examples/longopt.c,11
+main 7,87
+
+examples/atexit.c,23
+bye 5,46
+main 11,103
+
+examples/db.c,12
+main 8,102
+
+examples/add.c,29
+add_em_up 5,44
+main 21,323

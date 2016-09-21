@@ -1,0 +1,10 @@
+define sysdep-subdirs
+inet
+resolv
+sunrpc
+libI77
+libF77
+regex
+libtermcap
+libcurses
+endef

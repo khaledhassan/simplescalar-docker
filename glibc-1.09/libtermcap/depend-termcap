@@ -1,0 +1,3 @@
+include $(objpfx)termcap.d
+include $(objpfx)tparam.d
+include $(objpfx)tc_vers.d

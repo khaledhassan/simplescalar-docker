@@ -1,0 +1,77 @@
+# This file is generated from configure.in by Autoconf.  DO NOT EDIT!
+ 
+
+if [ ! "$inhibit_glue" ]; then
+
+
+# Find out what this system calls `sys_siglist'.
+test -n "$silent" || echo "checking for sys_siglist"
+cat > conftest.${ac_ext} <<EOF
+#include "confdefs.h"
+
+int main() { return 0; }
+int t() { extern char *sys_siglist[]; puts(*sys_siglist);; return 0; }
+EOF
+if eval $ac_compile; then
+  rm -rf conftest*
+  
+{
+test -n "$verbose" && \
+echo "	defining HAVE_SYS_SIGLIST"
+echo "#define" HAVE_SYS_SIGLIST "1" >> confdefs.h
+DEFS="$DEFS -DHAVE_SYS_SIGLIST=1"
+}
+
+
+fi
+rm -f conftest*
+
+test -n "$silent" || echo "checking for _sys_siglist"
+cat > conftest.${ac_ext} <<EOF
+#include "confdefs.h"
+
+int main() { return 0; }
+int t() { extern char *_sys_siglist[]; puts(*_sys_siglist);; return 0; }
+EOF
+if eval $ac_compile; then
+  rm -rf conftest*
+  
+{
+test -n "$verbose" && \
+echo "	defining HAVE__SYS_SIGLIST"
+echo "#define" HAVE__SYS_SIGLIST "1" >> confdefs.h
+DEFS="$DEFS -DHAVE__SYS_SIGLIST=1"
+}
+
+
+fi
+rm -f conftest*
+
+
+# Find out the name of the table the system's <ctype.h> uses for character
+# classification.  This is used by sysdeps/unix/common/glue-ctype.c.
+for ctype in _ctype_ __ctype_ __ctype _ctype__ _ctype _locp; do
+test -n "$silent" || echo "checking for $ctype"
+cat > conftest.${ac_ext} <<EOF
+#include "confdefs.h"
+#include <ctype.h>
+int main() { return 0; }
+int t() { $ctype[13];; return 0; }
+EOF
+if eval $ac_compile; then
+  rm -rf conftest*
+  
+{
+test -n "$verbose" && \
+echo "	defining HAVE_`echo $ctype | tr 'a-z' 'A-Z'`"
+echo "#define" HAVE_`echo $ctype | tr 'a-z' 'A-Z'` "1" >> confdefs.h
+DEFS="$DEFS -DHAVE_`echo $ctype | tr 'a-z' 'A-Z'`=1"
+}
+
+
+fi
+rm -f conftest*
+
+done
+
+fi

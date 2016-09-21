@@ -1,0 +1,132 @@
+
+mach_init.c,20
+__mach_init 28,982
+
+vm_page_size.c,0
+
+mig_strncpy.c,20
+__mig_strncpy 7,91
+
+__msg.c,73
+__mach_msg 30,1105
+__mach_msg_send	66,2161
+__mach_msg_receive 74,2355
+
+msg.c,0
+
+mig_support.c,133
+__mig_init 27,977
+__mig_get_reply_port 35,1102
+__mig_dealloc_reply_port 45,1288
+__mig_allocate 55,1559
+__mig_deallocate 64,1754
+
+mig_syms.c,0
+
+msg_destroy.c,0
+
+msgserver.c,0
+
+msgserver_t.c,0
+
+__msg_dest.c,94
+__mach_msg_destroy(61,1720
+mach_msg_destroy_port(128,3494
+mach_msg_destroy_memory(146,3935
+
+__msgserver.c,28
+__mach_msg_server 176,5450
+
+mach_error.c,20
+mach_error(66,2073
+
+mach_error_string.c,114
+#define EXPORT_BOOLEAN40,1352
+mach_error_type(49,1540
+mach_error_string_int(67,1892
+mach_error_string(90,2450
+
+error_compat.c,33
+__mach_error_map_compat(39,1295
+
+errsystems.c,22
+#define static 5,126
+
+devstream.c,78
+input 29,1012
+output 70,1790
+output 130,2890
+mach_open_devstream 221,4661
+
+bootprivport.c,30
+__mach_get_priv_ports 22,858
+
+setup-thread.c,56
+#define	STACK_SIZE	23,896
+__mach_setup_thread 27,1028
+
+thread-sym.c,0
+
+mach_init.h,181
+#define	_MACH_INIT_H	22,913
+#define __mach_task_self(32,1181
+#define mach_task_self(33,1254
+#define	vm_page_size	38,1391
+#define round_page(41,1490
+#define trunc_page(46,1656
+
+mach.h,52
+#define	_MACH_H	22,887
+#define __need_FILE74,2776
+
+mach_error.h,30
+#define	_MACH_ERROR_	45,1391
+
+mach/mach.h,0
+
+mach/mig_support.h,80
+#define	_MACH_MIG_SUPPORT_H	23,929
+__mig_strncpy 53,2048
+mig_strncpy 58,2193
+
+mach/error.h,772
+#define _MACH_ERROR_H_89,2773
+#define	err_none	100,2938
+#define ERR_SUCCESS	101,2972
+#define	ERR_ROUTINE_NIL	102,3009
+#define	err_system(105,3055
+#define err_sub(106,3095
+#define err_get_system(108,3134
+#define err_get_sub(109,3181
+#define err_get_code(110,3226
+#define system_emask	112,3268
+#define sub_emask	113,3309
+#define code_emask	114,3345
+#define	err_kern	118,3402
+#define	err_us	119,3450
+#define	err_server	120,3509
+#define	err_ipc	121,3571
+#define err_mach_ipc	122,3627
+#define err_bootstrap	123,3688
+#define err_hurd	124,3751
+#define err_local	125,3815
+#define	err_ipc_compat	126,3877
+#define	err_max_system	128,3957
+#define	unix_err(132,4037
+typedef	kern_return_t	mach_error_t;134,4091
+typedef mach_error_t	(* mach_error_fn_t)135,4127
+
+mach/default_pager_types.h,457
+#define _MACH_DEFAULT_PAGER_TYPES_H_40,1306
+typedef struct default_pager_info 47,1459
+} default_pager_info_t;51,1666
+typedef struct default_pager_object 54,1692
+} default_pager_object_t;57,1852
+typedef default_pager_object_t *default_pager_object_array_t;59,1879
+typedef struct default_pager_page 62,1943
+} default_pager_page_t;64,2044
+typedef default_pager_page_t *default_pager_page_array_t;66,2069
+typedef char default_pager_filename_t[68,2128
+
+mach/default_pager_types.defs,48
+#define _MACH_DEFAULT_PAGER_TYPES_DEFS_44,1408

@@ -1,0 +1,23 @@
+GLIBC_PROVIDES dnl See aclocal.m4 in the top level source directory.
+
+changequote(,)
+if [ ! "$inhibit_glue" ]; then
+changequote([,])
+
+# Find out what this system calls `sys_siglist'.
+AC_COMPILE_CHECK(sys_siglist, ,
+   [extern char *sys_siglist[]; puts(*sys_siglist);],
+   AC_DEFINE(HAVE_SYS_SIGLIST))
+AC_COMPILE_CHECK(_sys_siglist, ,
+   [extern char *_sys_siglist[]; puts(*_sys_siglist);],
+   AC_DEFINE(HAVE__SYS_SIGLIST))
+
+# Find out the name of the table the system's <ctype.h> uses for character
+# classification.  This is used by sysdeps/unix/common/glue-ctype.c.
+for ctype in _ctype_ __ctype_ __ctype _ctype__ _ctype _locp; do
+AC_COMPILE_CHECK($ctype, [#include <ctype.h>],
+		 [$ctype[13];],
+		 AC_DEFINE(HAVE_`echo $ctype | tr '[a-z]' '[A-Z]'`))
+done
+
+fi

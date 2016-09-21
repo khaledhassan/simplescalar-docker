@@ -1,0 +1,232 @@
+
+hurdid.c,41
+init_id 26,937
+_hurd_check_ids 40,1221
+
+hurdpath.c,102
+__hurd_path_lookup 25,923
+__hurd_path_split 113,2704
+__path_lookup 162,3789
+__path_split 186,4413
+
+hurdpid.c,43
+init_pids 29,1010
+_S_proc_newids 47,1342
+
+hurdports.c,107
+get 23,911
+#define	GET(39,1237
+set 43,1345
+#define SET(55,1602
+#define	GETSET(58,1700
+GETSET 61,1781
+
+hurdexec.c,20
+_hurd_exec 33,1240
+
+fexecve.c,16
+fexecve 26,972
+
+__setauth.c,41
+__setauth 40,1248
+init_reauth 110,3317
+
+setauth.c,0
+
+__pid2task.c,19
+__pid2task 22,869
+
+__task2pid.c,19
+__task2pid 22,862
+
+pid2task.c,0
+
+task2pid.c,0
+
+getuids.c,18
+__getuids 24,876
+
+setuids.c,16
+setuids 24,940
+
+getumask.c,17
+getumask 22,851
+
+fchroot.c,22
+DEFUN(fchroot,26,977
+
+hurdsock.c,48
+init_sock 32,1110
+_hurd_socket_server 53,1758
+
+hurdauth.c,73
+_hurd_refport_secure_p 24,916
+_S_add_auth 34,1081
+_S_del_auth 60,1552
+
+privports.c,30
+get_privileged_ports 28,1014
+
+msgportdemux.c,75
+struct demux25,942
+msgport_server 38,1221
+_hurd_msgport_receive 52,1520
+
+vpprintf.c,45
+DEFUN(pwrite,26,946
+DEFUN(vpprintf,39,1312
+
+hurdsig.c,240
+_hurd_thread_sigstate 44,1422
+write_corefile 81,2325
+abort_rpcs 151,4070
+abort_all_rpcs 215,6196
+_hurd_internal_post_signal 238,6763
+_S_sig_post 434,12449
+_hurdsig_init 550,15669
+_hurdsig_fault_init 594,17131
+reauth_proc 621,17947
+
+siginfo.c,30
+_hurd_siginfo_handler 23,875
+
+../sysdeps/stub/init-fault.c,63
+faulted 25,991
+_hurd_initialize_fault_recovery_state 31,1060
+
+../sysdeps/mach/hurd/i386/init-fault.c,64
+faulted 29,1081
+_hurd_initialize_fault_recovery_state 35,1150
+
+../sysdeps/stub/msging-p.c,37
+_hurd_thread_state_msging_p 26,1044
+
+../sysdeps/mach/hurd/i386/msging-p.c,37
+_hurd_thread_state_msging_p 30,1139
+
+hurd-raise.c,28
+_hurd_raise_signal 28,1066
+
+../sysdeps/stub/trampoline.c,32
+_hurd_setup_sighandler 30,1275
+
+../sysdeps/mach/hurd/i386/trampoline.c,32
+_hurd_setup_sighandler 34,1270
+
+../sysdeps/stub/longjmp-ctx.c,33
+_hurd_longjmp_sigcontext 25,952
+
+../sysdeps/mach/hurd/i386/longjmp-ctx.c,33
+_hurd_longjmp_sigcontext 25,957
+
+../sysdeps/stub/longjmp-ts.c,36
+_hurd_longjmp_thread_state 26,1016
+
+../sysdeps/mach/hurd/i386/longjmp-ts.c,36
+_hurd_longjmp_thread_state 28,1042
+
+catch-exc.c,33
+_S_catch_exception_raise 25,961
+
+../sysdeps/stub/exc2signal.c,32
+_hurd_exception2signal 26,1057
+
+../sysdeps/mach/hurd/i386/exc2signal.c,32
+_hurd_exception2signal 28,1110
+
+dtable.c,157
+init_dtable 43,1298
+get_dtable_port 109,3295
+fork_dtable 133,3826
+reauth_dtable 169,4846
+rectty_dtable 220,6133
+tiocsctty 276,7403
+tiocnotty 305,8168
+
+port2fd.c,23
+_hurd_port2fd 30,1119
+
+new-fd.c,21
+_hurd_new_fd 26,975
+
+alloc-fd.c,24
+_hurd_alloc_fd 29,1191
+
+intern-fd.c,25
+_hurd_intern_fd 28,1106
+
+__getdport.c,20
+__getdport 26,1017
+
+getdport.c,0
+
+openport.c,18
+openport 27,1020
+
+setdtsz.c,23
+setdtablesize 30,1120
+
+hurdsyms.c,0
+
+hurdinit.c,46
+_hurd_init 39,1237
+_hurd_proc_init 100,2963
+
+hurd.h,264
+#define	_HURD_H	21,848
+#define __spin_lock(40,1315
+#define __spin_unlock(41,1361
+#define __mutex_lock(43,1410
+#define __mutex_unlock(44,1457
+#define	__hurd_fail(52,1778
+#define	__USEPORT(62,2061
+#define __need_FILE118,3607
+extern void _hurd_exit 201,6665
+
+hurd/fd.h,452
+#define	_HURD_FD_H	22,869
+struct hurd_fd31,1017
+struct hurd_dtable45,1408
+_hurd_dtable_get 74,2255
+_hurd_dtable_free 97,2828
+_hurd_dtable_fd 117,3313
+struct hurd_fd_user143,3888
+_hurd_fd_get 154,4209
+_hurd_fd_free 168,4606
+#define	HURD_DPORT_USE(177,4831
+_hurd_fd_error 204,5947
+__hurd_dfail 230,6476
+#define	__need___va_list264,7787
+struct ioctl_handler269,7882
+#define	_HURD_HANDLE_IOCTLS(291,8541
+#define _HURD_HANDLE_IOCTL(298,8865
+
+hurd/id.h,54
+#define	_HURD_ID_H	22,871
+struct hurd_id_data28,981
+
+hurd/port.h,248
+#define	_HURD_PORT_H	22,892
+struct hurd_port36,1418
+#define	HURD_PORT_USE(48,1690
+_hurd_port_init 60,2092
+_hurd_port_locked_get 74,2393
+_hurd_port_get 90,2737
+_hurd_port_free 103,3007
+_hurd_port_locked_set 129,3678
+_hurd_port_set 144,4061
+
+hurd/signal.h,161
+#define	_HURD_SIGNAL_H	22,900
+struct hurd_sigstate39,1276
+#define	HURD_EINTR_RPC(164,5265
+#define	_SIG_CANT_MASK	206,6923
+#define HURD_MSGPORT_RPC(229,8230
+
+hurd/userlink.h,179
+#define	_HURD_USERLINK_H	22,925
+#define __need_NULL25,975
+struct hurd_userlink38,1600
+_hurd_userlink_link 47,1746
+_hurd_userlink_unlink 64,2235
+_hurd_userlink_clear 88,3100

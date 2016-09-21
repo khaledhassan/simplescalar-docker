@@ -1,0 +1,2 @@
+#define __stub_chflags
+#define __stub_fchflags

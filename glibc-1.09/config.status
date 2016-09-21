@@ -1,0 +1,5 @@
+#!/bin/sh
+# This file was generated automatically by configure.  Do not edit.
+# The GNU C library was configured in /afs/cs.wisc.edu/p/galileo/projects/ss2/release/glibc-1.09 for
+# ssbig-na-sstrix as follows:
+release= version= configure  --prefix=/p/galileo/projects/ss2/release/ssbig-na-sstrix ssbig-na-sstrix $*

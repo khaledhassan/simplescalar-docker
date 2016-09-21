@@ -1,0 +1,473 @@
+\entry {{\_}POSIX{\_}SOURCE}{8}{\code {{\_}POSIX{\_}SOURCE}}
+\entry {{\_}POSIX{\_}C{\_}SOURCE}{8}{\code {{\_}POSIX{\_}C{\_}SOURCE}}
+\entry {{\_}BSD{\_}SOURCE}{8}{\code {{\_}BSD{\_}SOURCE}}
+\entry {{\_}SVID{\_}SOURCE}{9}{\code {{\_}SVID{\_}SOURCE}}
+\entry {{\_}GNU{\_}SOURCE}{9}{\code {{\_}GNU{\_}SOURCE}}
+\entry {errno \relax }{13}{\code {errno \relax }}
+\entry {EPERM \relax }{14}{\code {EPERM \relax }}
+\entry {ENOENT \relax }{15}{\code {ENOENT \relax }}
+\entry {ESRCH \relax }{15}{\code {ESRCH \relax }}
+\entry {EINTR \relax }{15}{\code {EINTR \relax }}
+\entry {EIO \relax }{15}{\code {EIO \relax }}
+\entry {ENXIO \relax }{15}{\code {ENXIO \relax }}
+\entry {E2BIG \relax }{15}{\code {E2BIG \relax }}
+\entry {ENOEXEC \relax }{15}{\code {ENOEXEC \relax }}
+\entry {EBADF \relax }{15}{\code {EBADF \relax }}
+\entry {ECHILD \relax }{15}{\code {ECHILD \relax }}
+\entry {EDEADLK \relax }{15}{\code {EDEADLK \relax }}
+\entry {ENOMEM \relax }{16}{\code {ENOMEM \relax }}
+\entry {EACCES \relax }{16}{\code {EACCES \relax }}
+\entry {EFAULT \relax }{16}{\code {EFAULT \relax }}
+\entry {ENOTBLK \relax }{16}{\code {ENOTBLK \relax }}
+\entry {EBUSY \relax }{16}{\code {EBUSY \relax }}
+\entry {EEXIST \relax }{16}{\code {EEXIST \relax }}
+\entry {EXDEV \relax }{16}{\code {EXDEV \relax }}
+\entry {ENODEV \relax }{16}{\code {ENODEV \relax }}
+\entry {ENOTDIR \relax }{16}{\code {ENOTDIR \relax }}
+\entry {EISDIR \relax }{16}{\code {EISDIR \relax }}
+\entry {EINVAL \relax }{16}{\code {EINVAL \relax }}
+\entry {EMFILE \relax }{17}{\code {EMFILE \relax }}
+\entry {ENFILE \relax }{17}{\code {ENFILE \relax }}
+\entry {ENOTTY \relax }{17}{\code {ENOTTY \relax }}
+\entry {ETXTBSY \relax }{17}{\code {ETXTBSY \relax }}
+\entry {EFBIG \relax }{17}{\code {EFBIG \relax }}
+\entry {ENOSPC \relax }{17}{\code {ENOSPC \relax }}
+\entry {ESPIPE \relax }{17}{\code {ESPIPE \relax }}
+\entry {EROFS \relax }{17}{\code {EROFS \relax }}
+\entry {EMLINK \relax }{17}{\code {EMLINK \relax }}
+\entry {EPIPE \relax }{17}{\code {EPIPE \relax }}
+\entry {EDOM \relax }{18}{\code {EDOM \relax }}
+\entry {ERANGE \relax }{18}{\code {ERANGE \relax }}
+\entry {EAGAIN \relax }{18}{\code {EAGAIN \relax }}
+\entry {EWOULDBLOCK \relax }{18}{\code {EWOULDBLOCK \relax }}
+\entry {EINPROGRESS \relax }{18}{\code {EINPROGRESS \relax }}
+\entry {EALREADY \relax }{19}{\code {EALREADY \relax }}
+\entry {ENOTSOCK \relax }{19}{\code {ENOTSOCK \relax }}
+\entry {EMSGSIZE \relax }{19}{\code {EMSGSIZE \relax }}
+\entry {EPROTOTYPE \relax }{19}{\code {EPROTOTYPE \relax }}
+\entry {ENOPROTOOPT \relax }{19}{\code {ENOPROTOOPT \relax }}
+\entry {EPROTONOSUPPORT \relax }{19}{\code {EPROTONOSUPPORT \relax }}
+\entry {ESOCKTNOSUPPORT \relax }{19}{\code {ESOCKTNOSUPPORT \relax }}
+\entry {EOPNOTSUPP \relax }{19}{\code {EOPNOTSUPP \relax }}
+\entry {EPFNOSUPPORT \relax }{19}{\code {EPFNOSUPPORT \relax }}
+\entry {EAFNOSUPPORT \relax }{19}{\code {EAFNOSUPPORT \relax }}
+\entry {EADDRINUSE \relax }{20}{\code {EADDRINUSE \relax }}
+\entry {EADDRNOTAVAIL \relax }{20}{\code {EADDRNOTAVAIL \relax }}
+\entry {ENETDOWN \relax }{20}{\code {ENETDOWN \relax }}
+\entry {ENETUNREACH \relax }{20}{\code {ENETUNREACH \relax }}
+\entry {ENETRESET \relax }{20}{\code {ENETRESET \relax }}
+\entry {ECONNABORTED \relax }{20}{\code {ECONNABORTED \relax }}
+\entry {ECONNRESET \relax }{20}{\code {ECONNRESET \relax }}
+\entry {ENOBUFS \relax }{20}{\code {ENOBUFS \relax }}
+\entry {EISCONN \relax }{20}{\code {EISCONN \relax }}
+\entry {ENOTCONN \relax }{20}{\code {ENOTCONN \relax }}
+\entry {EDESTADDRREQ \relax }{20}{\code {EDESTADDRREQ \relax }}
+\entry {ESHUTDOWN \relax }{21}{\code {ESHUTDOWN \relax }}
+\entry {ETOOMANYREFS \relax }{21}{\code {ETOOMANYREFS \relax }}
+\entry {ETIMEDOUT \relax }{21}{\code {ETIMEDOUT \relax }}
+\entry {ECONNREFUSED \relax }{21}{\code {ECONNREFUSED \relax }}
+\entry {ELOOP \relax }{21}{\code {ELOOP \relax }}
+\entry {ENAMETOOLONG \relax }{21}{\code {ENAMETOOLONG \relax }}
+\entry {EHOSTDOWN \relax }{21}{\code {EHOSTDOWN \relax }}
+\entry {EHOSTUNREACH \relax }{21}{\code {EHOSTUNREACH \relax }}
+\entry {ENOTEMPTY \relax }{21}{\code {ENOTEMPTY \relax }}
+\entry {EPROCLIM \relax }{21}{\code {EPROCLIM \relax }}
+\entry {EUSERS \relax }{21}{\code {EUSERS \relax }}
+\entry {EDQUOT \relax }{21}{\code {EDQUOT \relax }}
+\entry {ESTALE \relax }{21}{\code {ESTALE \relax }}
+\entry {EREMOTE \relax }{22}{\code {EREMOTE \relax }}
+\entry {EBADRPC \relax }{22}{\code {EBADRPC \relax }}
+\entry {ERPCMISMATCH \relax }{22}{\code {ERPCMISMATCH \relax }}
+\entry {EPROGUNAVAIL \relax }{22}{\code {EPROGUNAVAIL \relax }}
+\entry {EPROGMISMATCH \relax }{22}{\code {EPROGMISMATCH \relax }}
+\entry {EPROCUNAVAIL \relax }{22}{\code {EPROCUNAVAIL \relax }}
+\entry {ENOLCK \relax }{22}{\code {ENOLCK \relax }}
+\entry {EFTYPE \relax }{22}{\code {EFTYPE \relax }}
+\entry {EAUTH \relax }{22}{\code {EAUTH \relax }}
+\entry {ENEEDAUTH \relax }{22}{\code {ENEEDAUTH \relax }}
+\entry {ENOSYS \relax }{22}{\code {ENOSYS \relax }}
+\entry {EBACKGROUND \relax }{22}{\code {EBACKGROUND \relax }}
+\entry {EDIED \relax }{23}{\code {EDIED \relax }}
+\entry {ED \relax }{23}{\code {ED \relax }}
+\entry {EGREGIOUS \relax }{23}{\code {EGREGIOUS \relax }}
+\entry {EIEIO \relax }{23}{\code {EIEIO \relax }}
+\entry {EGRATUITOUS \relax }{23}{\code {EGRATUITOUS \relax }}
+\entry {program{\_}invocation{\_}name \relax }{24}{\code {program{\_}invocation{\_}name \relax }}
+\entry {program{\_}invocation{\_}short{\_}name \relax }{24}{\code {program{\_}invocation{\_}short{\_}name \relax }}
+\entry {{\_}{\_}malloc{\_}hook}{35}{\code {{\_}{\_}malloc{\_}hook}}
+\entry {{\_}{\_}realloc{\_}hook}{35}{\code {{\_}{\_}realloc{\_}hook}}
+\entry {{\_}{\_}free{\_}hook}{35}{\code {{\_}{\_}free{\_}hook}}
+\entry {stdin \relax }{83}{\code {stdin \relax }}
+\entry {stdout \relax }{83}{\code {stdout \relax }}
+\entry {stderr \relax }{84}{\code {stderr \relax }}
+\entry {FOPEN{\_}MAX \relax }{85}{\code {FOPEN{\_}MAX \relax }}
+\entry {PA{\_}FLAG{\_}MASK \relax }{106}{\code {PA{\_}FLAG{\_}MASK \relax }}
+\entry {PA{\_}INT}{106}{\code {PA{\_}INT}}
+\entry {PA{\_}CHAR}{106}{\code {PA{\_}CHAR}}
+\entry {PA{\_}STRING}{106}{\code {PA{\_}STRING}}
+\entry {PA{\_}POINTER}{106}{\code {PA{\_}POINTER}}
+\entry {PA{\_}FLOAT}{106}{\code {PA{\_}FLOAT}}
+\entry {PA{\_}DOUBLE}{106}{\code {PA{\_}DOUBLE}}
+\entry {PA{\_}LAST}{107}{\code {PA{\_}LAST}}
+\entry {PA{\_}FLAG{\_}PTR}{107}{\code {PA{\_}FLAG{\_}PTR}}
+\entry {PA{\_}FLAG{\_}SHORT}{107}{\code {PA{\_}FLAG{\_}SHORT}}
+\entry {PA{\_}FLAG{\_}LONG}{107}{\code {PA{\_}FLAG{\_}LONG}}
+\entry {PA{\_}FLAG{\_}LONG{\_}LONG}{107}{\code {PA{\_}FLAG{\_}LONG{\_}LONG}}
+\entry {PA{\_}FLAG{\_}LONG{\_}DOUBLE}{107}{\code {PA{\_}FLAG{\_}LONG{\_}DOUBLE}}
+\entry {EOF \relax }{123}{\code {EOF \relax }}
+\entry {SEEK{\_}SET \relax }{126}{\code {SEEK{\_}SET \relax }}
+\entry {SEEK{\_}CUR \relax }{126}{\code {SEEK{\_}CUR \relax }}
+\entry {SEEK{\_}END \relax }{126}{\code {SEEK{\_}END \relax }}
+\entry {L{\_}SET}{126}{\code {L{\_}SET}}
+\entry {L{\_}INCR}{126}{\code {L{\_}INCR}}
+\entry {L{\_}XTND}{126}{\code {L{\_}XTND}}
+\entry {{\_}IOFBF \relax }{130}{\code {{\_}IOFBF \relax }}
+\entry {{\_}IOLBF \relax }{130}{\code {{\_}IOLBF \relax }}
+\entry {{\_}IONBF \relax }{130}{\code {{\_}IONBF \relax }}
+\entry {BUFSIZ \relax }{130}{\code {BUFSIZ \relax }}
+\entry {STDIN{\_}FILENO}{147}{\code {STDIN{\_}FILENO}}
+\entry {STDOUT{\_}FILENO}{147}{\code {STDOUT{\_}FILENO}}
+\entry {STDERR{\_}FILENO}{147}{\code {STDERR{\_}FILENO}}
+\entry {FD{\_}SETSIZE \relax }{150}{\code {FD{\_}SETSIZE \relax }}
+\entry {F{\_}DUPFD \relax }{154}{\code {F{\_}DUPFD \relax }}
+\entry {F{\_}GETFD \relax }{155}{\code {F{\_}GETFD \relax }}
+\entry {F{\_}SETFD \relax }{155}{\code {F{\_}SETFD \relax }}
+\entry {FD{\_}CLOEXEC \relax }{156}{\code {FD{\_}CLOEXEC \relax }}
+\entry {O{\_}RDONLY \relax }{157}{\code {O{\_}RDONLY \relax }}
+\entry {O{\_}WRONLY \relax }{157}{\code {O{\_}WRONLY \relax }}
+\entry {O{\_}RDWR \relax }{157}{\code {O{\_}RDWR \relax }}
+\entry {O{\_}READ \relax }{157}{\code {O{\_}READ \relax }}
+\entry {O{\_}WRITE \relax }{157}{\code {O{\_}WRITE \relax }}
+\entry {O{\_}EXEC \relax }{158}{\code {O{\_}EXEC \relax }}
+\entry {O{\_}ACCMODE \relax }{158}{\code {O{\_}ACCMODE \relax }}
+\entry {O{\_}CREAT \relax }{158}{\code {O{\_}CREAT \relax }}
+\entry {O{\_}EXCL \relax }{158}{\code {O{\_}EXCL \relax }}
+\entry {O{\_}NONBLOCK \relax }{158}{\code {O{\_}NONBLOCK \relax }}
+\entry {O{\_}NOCTTY \relax }{159}{\code {O{\_}NOCTTY \relax }}
+\entry {O{\_}IGNORE{\_}CTTY \relax }{159}{\code {O{\_}IGNORE{\_}CTTY \relax }}
+\entry {O{\_}NOLINK \relax }{159}{\code {O{\_}NOLINK \relax }}
+\entry {O{\_}NOTRANS \relax }{159}{\code {O{\_}NOTRANS \relax }}
+\entry {O{\_}TRUNC \relax }{159}{\code {O{\_}TRUNC \relax }}
+\entry {O{\_}SHLOCK \relax }{159}{\code {O{\_}SHLOCK \relax }}
+\entry {O{\_}EXLOCK \relax }{160}{\code {O{\_}EXLOCK \relax }}
+\entry {O{\_}APPEND \relax }{160}{\code {O{\_}APPEND \relax }}
+\entry {bit that enables nonblocking mode for the file. If this bit is set, \relax }{160}{\code {bit that enables nonblocking mode for the file. If this bit is set, \relax }}
+\entry {O{\_}NDELAY \relax }{160}{\code {O{\_}NDELAY \relax }}
+\entry {O{\_}ASYNC \relax }{160}{\code {O{\_}ASYNC \relax }}
+\entry {O{\_}FSYNC \relax }{160}{\code {O{\_}FSYNC \relax }}
+\entry {O{\_}SYNC \relax }{161}{\code {O{\_}SYNC \relax }}
+\entry {O{\_}NOATIME \relax }{161}{\code {O{\_}NOATIME \relax }}
+\entry {F{\_}GETFL \relax }{161}{\code {F{\_}GETFL \relax }}
+\entry {F{\_}SETFL \relax }{161}{\code {F{\_}SETFL \relax }}
+\entry {F{\_}GETLK \relax }{163}{\code {F{\_}GETLK \relax }}
+\entry {F{\_}SETLK \relax }{164}{\code {F{\_}SETLK \relax }}
+\entry {F{\_}SETLKW \relax }{165}{\code {F{\_}SETLKW \relax }}
+\entry {F{\_}RDLCK}{165}{\code {F{\_}RDLCK}}
+\entry {F{\_}WRLCK}{165}{\code {F{\_}WRLCK}}
+\entry {F{\_}UNLCK}{165}{\code {F{\_}UNLCK}}
+\entry {F{\_}GETOWN \relax }{166}{\code {F{\_}GETOWN \relax }}
+\entry {F{\_}SETOWN \relax }{166}{\code {F{\_}SETOWN \relax }}
+\entry {S{\_}IFMT \relax }{186}{\code {S{\_}IFMT \relax }}
+\entry {S{\_}IFDIR}{186}{\code {S{\_}IFDIR}}
+\entry {S{\_}IFCHR}{186}{\code {S{\_}IFCHR}}
+\entry {S{\_}IFBLK}{186}{\code {S{\_}IFBLK}}
+\entry {S{\_}IFREG}{186}{\code {S{\_}IFREG}}
+\entry {S{\_}IFLNK}{186}{\code {S{\_}IFLNK}}
+\entry {S{\_}IFSOCK}{186}{\code {S{\_}IFSOCK}}
+\entry {S{\_}IFIFO}{186}{\code {S{\_}IFIFO}}
+\entry {S{\_}IRUSR}{188}{\code {S{\_}IRUSR}}
+\entry {S{\_}IREAD}{188}{\code {S{\_}IREAD}}
+\entry {S{\_}IWUSR}{188}{\code {S{\_}IWUSR}}
+\entry {S{\_}IWRITE}{188}{\code {S{\_}IWRITE}}
+\entry {S{\_}IXUSR}{188}{\code {S{\_}IXUSR}}
+\entry {S{\_}IEXEC}{188}{\code {S{\_}IEXEC}}
+\entry {S{\_}IRWXU}{188}{\code {S{\_}IRWXU}}
+\entry {S{\_}IRGRP}{188}{\code {S{\_}IRGRP}}
+\entry {S{\_}IWGRP}{188}{\code {S{\_}IWGRP}}
+\entry {S{\_}IXGRP}{188}{\code {S{\_}IXGRP}}
+\entry {S{\_}IRWXG}{188}{\code {S{\_}IRWXG}}
+\entry {S{\_}IROTH}{189}{\code {S{\_}IROTH}}
+\entry {S{\_}IWOTH}{189}{\code {S{\_}IWOTH}}
+\entry {S{\_}IXOTH}{189}{\code {S{\_}IXOTH}}
+\entry {S{\_}IRWXO}{189}{\code {S{\_}IRWXO}}
+\entry {S{\_}ISUID}{189}{\code {S{\_}ISUID}}
+\entry {S{\_}ISGID}{189}{\code {S{\_}ISGID}}
+\entry {S{\_}ISVTX}{189}{\code {S{\_}ISVTX}}
+\entry {R{\_}OK \relax }{194}{\code {R{\_}OK \relax }}
+\entry {W{\_}OK \relax }{194}{\code {W{\_}OK \relax }}
+\entry {X{\_}OK \relax }{194}{\code {X{\_}OK \relax }}
+\entry {F{\_}OK \relax }{194}{\code {F{\_}OK \relax }}
+\entry {L{\_}tmpnam \relax }{197}{\code {L{\_}tmpnam \relax }}
+\entry {TMP{\_}MAX \relax }{197}{\code {TMP{\_}MAX \relax }}
+\entry {P{\_}tmpdir \relax }{198}{\code {P{\_}tmpdir \relax }}
+\entry {SOCK{\_}STREAM \relax }{208}{\code {SOCK{\_}STREAM \relax }}
+\entry {SOCK{\_}DGRAM \relax }{208}{\code {SOCK{\_}DGRAM \relax }}
+\entry {SOCK{\_}RAW \relax }{209}{\code {SOCK{\_}RAW \relax }}
+\entry {AF{\_}FILE}{210}{\code {AF{\_}FILE}}
+\entry {AF{\_}UNIX}{210}{\code {AF{\_}UNIX}}
+\entry {AF{\_}INET}{210}{\code {AF{\_}INET}}
+\entry {AF{\_}UNSPEC}{211}{\code {AF{\_}UNSPEC}}
+\entry {PF{\_}FILE \relax }{213}{\code {PF{\_}FILE \relax }}
+\entry {PF{\_}UNIX \relax }{213}{\code {PF{\_}UNIX \relax }}
+\entry {PF{\_}INET \relax }{215}{\code {PF{\_}INET \relax }}
+\entry {INADDR{\_}LOOPBACK \relax }{218}{\code {INADDR{\_}LOOPBACK \relax }}
+\entry {INADDR{\_}ANY \relax }{218}{\code {INADDR{\_}ANY \relax }}
+\entry {INADDR{\_}BROADCAST \relax }{218}{\code {INADDR{\_}BROADCAST \relax }}
+\entry {INADDR{\_}NONE \relax }{218}{\code {INADDR{\_}NONE \relax }}
+\entry {h{\_}errno}{221}{\code {h{\_}errno}}
+\entry {HOST{\_}NOT{\_}FOUND}{221}{\code {HOST{\_}NOT{\_}FOUND}}
+\entry {TRY{\_}AGAIN}{221}{\code {TRY{\_}AGAIN}}
+\entry {NO{\_}RECOVERY}{221}{\code {NO{\_}RECOVERY}}
+\entry {NO{\_}ADDRESS}{221}{\code {NO{\_}ADDRESS}}
+\entry {IPPORT{\_}RESERVED \relax }{222}{\code {IPPORT{\_}RESERVED \relax }}
+\entry {IPPORT{\_}USERRESERVED \relax }{222}{\code {IPPORT{\_}USERRESERVED \relax }}
+\entry {PF{\_}NS}{228}{\code {PF{\_}NS}}
+\entry {PF{\_}ISO}{228}{\code {PF{\_}ISO}}
+\entry {PF{\_}CCITT}{228}{\code {PF{\_}CCITT}}
+\entry {PF{\_}IMPLINK}{228}{\code {PF{\_}IMPLINK}}
+\entry {PF{\_}ROUTE}{228}{\code {PF{\_}ROUTE}}
+\entry {MSG{\_}OOB \relax }{236}{\code {MSG{\_}OOB \relax }}
+\entry {MSG{\_}PEEK \relax }{236}{\code {MSG{\_}PEEK \relax }}
+\entry {MSG{\_}DONTROUTE \relax }{237}{\code {MSG{\_}DONTROUTE \relax }}
+\entry {SOL{\_}SOCKET \relax }{250}{\code {SOL{\_}SOCKET \relax }}
+\entry {NCCS \relax }{258}{\code {NCCS \relax }}
+\entry {TCSANOW}{258}{\code {TCSANOW}}
+\entry {TCSADRAIN}{258}{\code {TCSADRAIN}}
+\entry {TCSAFLUSH}{259}{\code {TCSAFLUSH}}
+\entry {TCSASOFT}{259}{\code {TCSASOFT}}
+\entry {INPCK \relax }{261}{\code {INPCK \relax }}
+\entry {IGNPAR \relax }{261}{\code {IGNPAR \relax }}
+\entry {PARMRK \relax }{261}{\code {PARMRK \relax }}
+\entry {ISTRIP \relax }{261}{\code {ISTRIP \relax }}
+\entry {IGNBRK \relax }{262}{\code {IGNBRK \relax }}
+\entry {BRKINT \relax }{262}{\code {BRKINT \relax }}
+\entry {IGNCR \relax }{262}{\code {IGNCR \relax }}
+\entry {ICRNL \relax }{262}{\code {ICRNL \relax }}
+\entry {INLCR \relax }{262}{\code {INLCR \relax }}
+\entry {IXOFF \relax }{262}{\code {IXOFF \relax }}
+\entry {IXON \relax }{262}{\code {IXON \relax }}
+\entry {IXANY \relax }{262}{\code {IXANY \relax }}
+\entry {IMAXBEL \relax }{263}{\code {IMAXBEL \relax }}
+\entry {OPOST \relax }{263}{\code {OPOST \relax }}
+\entry {ONLCR \relax }{263}{\code {ONLCR \relax }}
+\entry {OXTABS \relax }{263}{\code {OXTABS \relax }}
+\entry {ONOEOT \relax }{263}{\code {ONOEOT \relax }}
+\entry {CLOCAL \relax }{264}{\code {CLOCAL \relax }}
+\entry {HUPCL \relax }{264}{\code {HUPCL \relax }}
+\entry {CREAD \relax }{264}{\code {CREAD \relax }}
+\entry {CSTOPB \relax }{264}{\code {CSTOPB \relax }}
+\entry {PARENB \relax }{264}{\code {PARENB \relax }}
+\entry {PARODD \relax }{265}{\code {PARODD \relax }}
+\entry {CSIZE \relax }{265}{\code {CSIZE \relax }}
+\entry {CS5 \relax }{265}{\code {CS5 \relax }}
+\entry {CS6 \relax }{265}{\code {CS6 \relax }}
+\entry {CS7 \relax }{265}{\code {CS7 \relax }}
+\entry {CS8 \relax }{265}{\code {CS8 \relax }}
+\entry {CCTS{\_}OFLOW \relax }{265}{\code {CCTS{\_}OFLOW \relax }}
+\entry {CRTS{\_}IFLOW \relax }{265}{\code {CRTS{\_}IFLOW \relax }}
+\entry {MDMBUF \relax }{265}{\code {MDMBUF \relax }}
+\entry {CIGNORE \relax }{265}{\code {CIGNORE \relax }}
+\entry {ICANON \relax }{266}{\code {ICANON \relax }}
+\entry {ECHO \relax }{266}{\code {ECHO \relax }}
+\entry {ECHOE \relax }{266}{\code {ECHOE \relax }}
+\entry {ECHOPRT \relax }{266}{\code {ECHOPRT \relax }}
+\entry {ECHOK \relax }{266}{\code {ECHOK \relax }}
+\entry {ECHOKE \relax }{267}{\code {ECHOKE \relax }}
+\entry {ECHONL \relax }{267}{\code {ECHONL \relax }}
+\entry {ECHOCTL \relax }{267}{\code {ECHOCTL \relax }}
+\entry {ISIG \relax }{267}{\code {ISIG \relax }}
+\entry {IEXTEN \relax }{267}{\code {IEXTEN \relax }}
+\entry {NOFLSH \relax }{267}{\code {NOFLSH \relax }}
+\entry {TOSTOP \relax }{268}{\code {TOSTOP \relax }}
+\entry {ALTWERASE \relax }{268}{\code {ALTWERASE \relax }}
+\entry {FLUSHO \relax }{268}{\code {FLUSHO \relax }}
+\entry {NOKERNINFO \relax }{268}{\code {NOKERNINFO \relax }}
+\entry {PENDIN \relax }{268}{\code {PENDIN \relax }}
+\entry {B0}{270}{\code {B0}}
+\entry {B50}{270}{\code {B50}}
+\entry {B75}{270}{\code {B75}}
+\entry {B110}{270}{\code {B110}}
+\entry {B134}{270}{\code {B134}}
+\entry {B150}{270}{\code {B150}}
+\entry {B200}{270}{\code {B200}}
+\entry {B300}{270}{\code {B300}}
+\entry {B600}{270}{\code {B600}}
+\entry {B1200}{270}{\code {B1200}}
+\entry {B1800}{270}{\code {B1800}}
+\entry {B2400}{270}{\code {B2400}}
+\entry {B4800}{270}{\code {B4800}}
+\entry {B9600}{270}{\code {B9600}}
+\entry {B19200}{270}{\code {B19200}}
+\entry {B38400}{270}{\code {B38400}}
+\entry {EXTA}{270}{\code {EXTA}}
+\entry {EXTB}{270}{\code {EXTB}}
+\entry {{\_}POSIX{\_}VDISABLE}{270}{\code {{\_}POSIX{\_}VDISABLE}}
+\entry {VEOF \relax }{271}{\code {VEOF \relax }}
+\entry {VEOL \relax }{271}{\code {VEOL \relax }}
+\entry {VEOL2 \relax }{271}{\code {VEOL2 \relax }}
+\entry {VERASE \relax }{271}{\code {VERASE \relax }}
+\entry {VWERASE \relax }{272}{\code {VWERASE \relax }}
+\entry {VKILL \relax }{272}{\code {VKILL \relax }}
+\entry {VREPRINT \relax }{272}{\code {VREPRINT \relax }}
+\entry {VINTR \relax }{272}{\code {VINTR \relax }}
+\entry {VQUIT \relax }{273}{\code {VQUIT \relax }}
+\entry {VSUSP \relax }{273}{\code {VSUSP \relax }}
+\entry {VDSUSP \relax }{273}{\code {VDSUSP \relax }}
+\entry {VSTART \relax }{274}{\code {VSTART \relax }}
+\entry {VSTOP \relax }{274}{\code {VSTOP \relax }}
+\entry {VLNEXT \relax }{274}{\code {VLNEXT \relax }}
+\entry {VDISCARD \relax }{275}{\code {VDISCARD \relax }}
+\entry {VSTATUS \relax }{275}{\code {VSTATUS \relax }}
+\entry {VMIN \relax }{275}{\code {VMIN \relax }}
+\entry {VTIME \relax }{276}{\code {VTIME \relax }}
+\entry {TCIFLUSH}{278}{\code {TCIFLUSH}}
+\entry {TCOFLUSH}{278}{\code {TCOFLUSH}}
+\entry {TCIOFLUSH}{278}{\code {TCIOFLUSH}}
+\entry {TCOOFF}{278}{\code {TCOOFF}}
+\entry {TCOON}{278}{\code {TCOON}}
+\entry {TCIOFF}{278}{\code {TCIOFF}}
+\entry {TCION}{278}{\code {TCION}}
+\entry {EBADF}{279}{\code {EBADF}}
+\entry {ENOTTY}{279}{\code {ENOTTY}}
+\entry {EINVAL}{279}{\code {EINVAL}}
+\entry {HUGE{\_}VAL \relax }{282}{\code {HUGE{\_}VAL \relax }}
+\entry {RAND{\_}MAX \relax }{286}{\code {RAND{\_}MAX \relax }}
+\entry {NAN \relax }{289}{\code {NAN \relax }}
+\entry {CLOCKS{\_}PER{\_}SEC \relax }{322}{\code {CLOCKS{\_}PER{\_}SEC \relax }}
+\entry {CLK{\_}TCK \relax }{322}{\code {CLK{\_}TCK \relax }}
+\entry {* tzname [2] \relax }{334}{\code {* tzname [2] \relax }}
+\entry {timezone \relax }{334}{\code {timezone \relax }}
+\entry {daylight \relax }{334}{\code {daylight \relax }}
+\entry {RLIMIT{\_}CPU}{341}{\code {RLIMIT{\_}CPU}}
+\entry {RLIMIT{\_}FSIZE}{342}{\code {RLIMIT{\_}FSIZE}}
+\entry {RLIMIT{\_}DATA}{342}{\code {RLIMIT{\_}DATA}}
+\entry {RLIMIT{\_}STACK}{342}{\code {RLIMIT{\_}STACK}}
+\entry {RLIMIT{\_}CORE}{342}{\code {RLIMIT{\_}CORE}}
+\entry {RLIMIT{\_}RSS}{342}{\code {RLIMIT{\_}RSS}}
+\entry {RLIMIT{\_}NOFILE}{342}{\code {RLIMIT{\_}NOFILE}}
+\entry {RLIMIT{\_}OFILE}{342}{\code {RLIMIT{\_}OFILE}}
+\entry {RLIM{\_}NLIMITS}{342}{\code {RLIM{\_}NLIMITS}}
+\entry {int}{342}{\code {int}}
+\entry {PRIO{\_}MIN}{343}{\code {PRIO{\_}MIN}}
+\entry {PRIO{\_}MAX}{343}{\code {PRIO{\_}MAX}}
+\entry {PRIO{\_}PROCESS}{344}{\code {PRIO{\_}PROCESS}}
+\entry {PRIO{\_}PGRP}{344}{\code {PRIO{\_}PGRP}}
+\entry {PRIO{\_}USER}{344}{\code {PRIO{\_}USER}}
+\entry {MB{\_}LEN{\_}MAX \relax }{348}{\code {MB{\_}LEN{\_}MAX \relax }}
+\entry {MB{\_}CUR{\_}MAX \relax }{348}{\code {MB{\_}CUR{\_}MAX \relax }}
+\entry {LC{\_}COLLATE}{358}{\code {LC{\_}COLLATE}}
+\entry {LC{\_}CTYPE}{358}{\code {LC{\_}CTYPE}}
+\entry {LC{\_}MONETARY}{359}{\code {LC{\_}MONETARY}}
+\entry {LC{\_}NUMERIC}{359}{\code {LC{\_}NUMERIC}}
+\entry {LC{\_}TIME}{359}{\code {LC{\_}TIME}}
+\entry {LC{\_}ALL}{359}{\code {LC{\_}ALL}}
+\entry {LANG}{359}{\code {LANG}}
+\entry {NSIG \relax }{374}{\code {NSIG \relax }}
+\entry {COREFILE}{374}{\code {COREFILE}}
+\entry {SIGFPE \relax }{375}{\code {SIGFPE \relax }}
+\entry {FPE{\_}INTOVF{\_}TRAP}{375}{\code {FPE{\_}INTOVF{\_}TRAP}}
+\entry {FPE{\_}INTDIV{\_}TRAP}{375}{\code {FPE{\_}INTDIV{\_}TRAP}}
+\entry {FPE{\_}SUBRNG{\_}TRAP}{375}{\code {FPE{\_}SUBRNG{\_}TRAP}}
+\entry {FPE{\_}FLTOVF{\_}TRAP}{375}{\code {FPE{\_}FLTOVF{\_}TRAP}}
+\entry {FPE{\_}FLTDIV{\_}TRAP}{375}{\code {FPE{\_}FLTDIV{\_}TRAP}}
+\entry {FPE{\_}FLTUND{\_}TRAP}{375}{\code {FPE{\_}FLTUND{\_}TRAP}}
+\entry {FPE{\_}DECOVF{\_}TRAP}{375}{\code {FPE{\_}DECOVF{\_}TRAP}}
+\entry {SIGILL \relax }{376}{\code {SIGILL \relax }}
+\entry {SIGSEGV \relax }{376}{\code {SIGSEGV \relax }}
+\entry {SIGBUS \relax }{376}{\code {SIGBUS \relax }}
+\entry {SIGABRT \relax }{376}{\code {SIGABRT \relax }}
+\entry {SIGIOT \relax }{376}{\code {SIGIOT \relax }}
+\entry {SIGTRAP \relax }{377}{\code {SIGTRAP \relax }}
+\entry {SIGEMT \relax }{377}{\code {SIGEMT \relax }}
+\entry {SIGSYS \relax }{377}{\code {SIGSYS \relax }}
+\entry {SIGTERM \relax }{377}{\code {SIGTERM \relax }}
+\entry {SIGINT \relax }{377}{\code {SIGINT \relax }}
+\entry {SIGQUIT \relax }{378}{\code {SIGQUIT \relax }}
+\entry {SIGKILL \relax }{378}{\code {SIGKILL \relax }}
+\entry {SIGHUP \relax }{378}{\code {SIGHUP \relax }}
+\entry {SIGALRM \relax }{379}{\code {SIGALRM \relax }}
+\entry {SIGVTALRM \relax }{379}{\code {SIGVTALRM \relax }}
+\entry {SIGPROF \relax }{379}{\code {SIGPROF \relax }}
+\entry {SIGIO \relax }{379}{\code {SIGIO \relax }}
+\entry {SIGURG \relax }{379}{\code {SIGURG \relax }}
+\entry {SIGPOLL \relax }{380}{\code {SIGPOLL \relax }}
+\entry {SIGCHLD \relax }{380}{\code {SIGCHLD \relax }}
+\entry {SIGCLD \relax }{380}{\code {SIGCLD \relax }}
+\entry {SIGCONT \relax }{380}{\code {SIGCONT \relax }}
+\entry {SIGSTOP \relax }{380}{\code {SIGSTOP \relax }}
+\entry {SIGTSTP \relax }{380}{\code {SIGTSTP \relax }}
+\entry {SIGTTIN \relax }{381}{\code {SIGTTIN \relax }}
+\entry {SIGTTOU \relax }{381}{\code {SIGTTOU \relax }}
+\entry {SIGPIPE \relax }{382}{\code {SIGPIPE \relax }}
+\entry {SIGLOST \relax }{382}{\code {SIGLOST \relax }}
+\entry {SIGXCPU \relax }{382}{\code {SIGXCPU \relax }}
+\entry {SIGXFSZ \relax }{382}{\code {SIGXFSZ \relax }}
+\entry {SIGUSR1 \relax }{382}{\code {SIGUSR1 \relax }}
+\entry {SIGUSR2 \relax }{382}{\code {SIGUSR2 \relax }}
+\entry {SIGWINCH \relax }{383}{\code {SIGWINCH \relax }}
+\entry {SIGINFO \relax }{383}{\code {SIGINFO \relax }}
+\entry {sys{\_}siglist}{384}{\code {sys{\_}siglist}}
+\entry {SIG{\_}DFL}{385}{\code {SIG{\_}DFL}}
+\entry {SIG{\_}IGN}{385}{\code {SIG{\_}IGN}}
+\entry {SIG{\_}ERR \relax }{386}{\code {SIG{\_}ERR \relax }}
+\entry {SA{\_}NOCLDSTOP \relax }{390}{\code {SA{\_}NOCLDSTOP \relax }}
+\entry {SA{\_}ONSTACK \relax }{390}{\code {SA{\_}ONSTACK \relax }}
+\entry {SA{\_}RESTART \relax }{390}{\code {SA{\_}RESTART \relax }}
+\entry {SIG{\_}BLOCK}{410}{\code {SIG{\_}BLOCK}}
+\entry {SIG{\_}UNBLOCK}{410}{\code {SIG{\_}UNBLOCK}}
+\entry {SIG{\_}SETMASK}{410}{\code {SIG{\_}SETMASK}}
+\entry {SIGSTKSZ}{419}{\code {SIGSTKSZ}}
+\entry {MINSIGSTKSZ}{419}{\code {MINSIGSTKSZ}}
+\entry {SA{\_}DISABLE}{419}{\code {SA{\_}DISABLE}}
+\entry {SA{\_}ONSTACK}{419}{\code {SA{\_}ONSTACK}}
+\entry {SV{\_}ONSTACK \relax }{422}{\code {SV{\_}ONSTACK \relax }}
+\entry {SV{\_}INTERRUPT \relax }{422}{\code {SV{\_}INTERRUPT \relax }}
+\entry {SV{\_}RESETHAND \relax }{422}{\code {SV{\_}RESETHAND \relax }}
+\entry {opterr \relax }{427}{\code {opterr \relax }}
+\entry {optopt \relax }{427}{\code {optopt \relax }}
+\entry {optind \relax }{427}{\code {optind \relax }}
+\entry {optarg \relax }{427}{\code {optarg \relax }}
+\entry {environ \relax }{434}{\code {environ \relax }}
+\entry {EXIT{\_}SUCCESS \relax }{438}{\code {EXIT{\_}SUCCESS \relax }}
+\entry {EXIT{\_}FAILURE \relax }{438}{\code {EXIT{\_}FAILURE \relax }}
+\entry {L{\_}ctermid \relax }{471}{\code {L{\_}ctermid \relax }}
+\entry {L{\_}cuserid \relax }{485}{\code {L{\_}cuserid \relax }}
+\entry {ARG{\_}MAX \relax }{495}{\code {ARG{\_}MAX \relax }}
+\entry {CHILD{\_}MAX \relax }{495}{\code {CHILD{\_}MAX \relax }}
+\entry {OPEN{\_}MAX \relax }{495}{\code {OPEN{\_}MAX \relax }}
+\entry {STREAM{\_}MAX \relax }{495}{\code {STREAM{\_}MAX \relax }}
+\entry {TZNAME{\_}MAX \relax }{496}{\code {TZNAME{\_}MAX \relax }}
+\entry {NGROUPS{\_}MAX \relax }{496}{\code {NGROUPS{\_}MAX \relax }}
+\entry {SSIZE{\_}MAX \relax }{496}{\code {SSIZE{\_}MAX \relax }}
+\entry {RE{\_}DUP{\_}MAX \relax }{496}{\code {RE{\_}DUP{\_}MAX \relax }}
+\entry {{\_}POSIX{\_}JOB{\_}CONTROL \relax }{497}{\code {{\_}POSIX{\_}JOB{\_}CONTROL \relax }}
+\entry {{\_}POSIX{\_}SAVED{\_}IDS \relax }{497}{\code {{\_}POSIX{\_}SAVED{\_}IDS \relax }}
+\entry {{\_}POSIX2{\_}C{\_}DEV \relax }{497}{\code {{\_}POSIX2{\_}C{\_}DEV \relax }}
+\entry {{\_}POSIX2{\_}FORT{\_}DEV \relax }{497}{\code {{\_}POSIX2{\_}FORT{\_}DEV \relax }}
+\entry {{\_}POSIX2{\_}FORT{\_}RUN \relax }{497}{\code {{\_}POSIX2{\_}FORT{\_}RUN \relax }}
+\entry {{\_}POSIX2{\_}LOCALEDEF \relax }{497}{\code {{\_}POSIX2{\_}LOCALEDEF \relax }}
+\entry {{\_}POSIX2{\_}SW{\_}DEV \relax }{498}{\code {{\_}POSIX2{\_}SW{\_}DEV \relax }}
+\entry {{\_}POSIX{\_}VERSION \relax }{498}{\code {{\_}POSIX{\_}VERSION \relax }}
+\entry {{\_}POSIX2{\_}C{\_}VERSION \relax }{498}{\code {{\_}POSIX2{\_}C{\_}VERSION \relax }}
+\entry {LINK{\_}MAX \relax }{503}{\code {LINK{\_}MAX \relax }}
+\entry {MAX{\_}CANON \relax }{503}{\code {MAX{\_}CANON \relax }}
+\entry {MAX{\_}INPUT \relax }{503}{\code {MAX{\_}INPUT \relax }}
+\entry {NAME{\_}MAX \relax }{503}{\code {NAME{\_}MAX \relax }}
+\entry {PATH{\_}MAX \relax }{503}{\code {PATH{\_}MAX \relax }}
+\entry {PIPE{\_}BUF \relax }{503}{\code {PIPE{\_}BUF \relax }}
+\entry {MAXNAMLEN \relax }{504}{\code {MAXNAMLEN \relax }}
+\entry {FILENAME{\_}MAX \relax }{504}{\code {FILENAME{\_}MAX \relax }}
+\entry {{\_}POSIX{\_}CHOWN{\_}RESTRICTED \relax }{504}{\code {{\_}POSIX{\_}CHOWN{\_}RESTRICTED \relax }}
+\entry {{\_}POSIX{\_}NO{\_}TRUNC \relax }{504}{\code {{\_}POSIX{\_}NO{\_}TRUNC \relax }}
+\entry {{\_}POSIX{\_}VDISABLE \relax }{505}{\code {{\_}POSIX{\_}VDISABLE \relax }}
+\entry {BC{\_}BASE{\_}MAX \relax }{507}{\code {BC{\_}BASE{\_}MAX \relax }}
+\entry {BC{\_}SCALE{\_}MAX \relax }{507}{\code {BC{\_}SCALE{\_}MAX \relax }}
+\entry {BC{\_}DIM{\_}MAX \relax }{507}{\code {BC{\_}DIM{\_}MAX \relax }}
+\entry {BC{\_}STRING{\_}MAX \relax }{507}{\code {BC{\_}STRING{\_}MAX \relax }}
+\entry {BC{\_}DIM{\_}MAX \relax }{508}{\code {BC{\_}DIM{\_}MAX \relax }}
+\entry {COLL{\_}WEIGHTS{\_}MAX \relax }{508}{\code {COLL{\_}WEIGHTS{\_}MAX \relax }}
+\entry {EXPR{\_}NEST{\_}MAX \relax }{508}{\code {EXPR{\_}NEST{\_}MAX \relax }}
+\entry {LINE{\_}MAX \relax }{508}{\code {LINE{\_}MAX \relax }}
+\entry {EQUIV{\_}CLASS{\_}MAX \relax }{508}{\code {EQUIV{\_}CLASS{\_}MAX \relax }}
+\entry {NDEBUG}{511}{\code {NDEBUG}}
+\entry {NULL \relax }{519}{\code {NULL \relax }}

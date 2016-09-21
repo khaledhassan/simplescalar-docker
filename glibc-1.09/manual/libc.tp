@@ -1,0 +1,77 @@
+\entry {enum mcheck{\_}status}{34}{\code {enum mcheck{\_}status}}
+\entry {struct mstats}{36}{\code {struct mstats}}
+\entry {struct obstack}{38}{\code {struct obstack}}
+\entry {FILE}{83}{\code {FILE}}
+\entry {struct printf{\_}info}{110}{\code {struct printf{\_}info}}
+\entry {printf{\_}function}{112}{\code {printf{\_}function}}
+\entry {printf{\_}arginfo{\_}function}{112}{\code {printf{\_}arginfo{\_}function}}
+\entry {fpos{\_}t}{127}{\code {fpos{\_}t}}
+\entry {cookie{\_}io{\_}functions{\_}t}{135}{\code {cookie{\_}io{\_}functions{\_}t}}
+\entry {cookie{\_}read{\_}function}{137}{\code {cookie{\_}read{\_}function}}
+\entry {cookie{\_}write{\_}function}{137}{\code {cookie{\_}write{\_}function}}
+\entry {cookie{\_}seek{\_}function}{137}{\code {cookie{\_}seek{\_}function}}
+\entry {cookie{\_}close{\_}function}{137}{\code {cookie{\_}close{\_}function}}
+\entry {ssize{\_}t}{141}{\code {ssize{\_}t}}
+\entry {off{\_}t}{146}{\code {off{\_}t}}
+\entry {fd{\_}set}{150}{\code {fd{\_}set}}
+\entry {struct flock}{163}{\code {struct flock}}
+\entry {struct dirent}{171}{\code {struct dirent}}
+\entry {DIR}{172}{\code {DIR}}
+\entry {struct stat}{182}{\code {struct stat}}
+\entry {mode{\_}t}{184}{\code {mode{\_}t}}
+\entry {ino{\_}t}{184}{\code {ino{\_}t}}
+\entry {dev{\_}t}{184}{\code {dev{\_}t}}
+\entry {nlink{\_}t}{184}{\code {nlink{\_}t}}
+\entry {struct utimbuf}{195}{\code {struct utimbuf}}
+\entry {struct sockaddr}{210}{\code {struct sockaddr}}
+\entry {struct sockaddr{\_}un}{213}{\code {struct sockaddr{\_}un}}
+\entry {struct sockaddr{\_}in}{215}{\code {struct sockaddr{\_}in}}
+\entry {struct in{\_}addr}{217}{\code {struct in{\_}addr}}
+\entry {struct hostent}{219}{\code {struct hostent}}
+\entry {struct servent}{222}{\code {struct servent}}
+\entry {struct protoent}{225}{\code {struct protoent}}
+\entry {struct linger}{251}{\code {struct linger}}
+\entry {struct netent}{252}{\code {struct netent}}
+\entry {struct termios}{257}{\code {struct termios}}
+\entry {tcflag{\_}t}{258}{\code {tcflag{\_}t}}
+\entry {cc{\_}t}{258}{\code {cc{\_}t}}
+\entry {speed{\_}t}{270}{\code {speed{\_}t}}
+\entry {div{\_}t}{293}{\code {div{\_}t}}
+\entry {ldiv{\_}t}{294}{\code {ldiv{\_}t}}
+\entry {comparison{\_}fn{\_}t}{299}{\code {comparison{\_}fn{\_}t}}
+\entry {glob{\_}t}{306}{\code {glob{\_}t}}
+\entry {regex{\_}t}{310}{\code {regex{\_}t}}
+\entry {regmatch{\_}t}{313}{\code {regmatch{\_}t}}
+\entry {regoff{\_}t}{313}{\code {regoff{\_}t}}
+\entry {wordexp{\_}t}{316}{\code {wordexp{\_}t}}
+\entry {clock{\_}t}{322}{\code {clock{\_}t}}
+\entry {struct tms}{322}{\code {struct tms}}
+\entry {time{\_}t}{324}{\code {time{\_}t}}
+\entry {struct timeval}{324}{\code {struct timeval}}
+\entry {struct timezone}{325}{\code {struct timezone}}
+\entry {struct tm}{327}{\code {struct tm}}
+\entry {struct itimerval}{336}{\code {struct itimerval}}
+\entry {struct rusage}{339}{\code {struct rusage}}
+\entry {struct rlimit}{341}{\code {struct rlimit}}
+\entry {wchar{\_}t}{349}{\code {wchar{\_}t}}
+\entry {struct lconv}{362}{\code {struct lconv}}
+\entry {jmp{\_}buf}{369}{\code {jmp{\_}buf}}
+\entry {sigjmp{\_}buf}{370}{\code {sigjmp{\_}buf}}
+\entry {sighandler{\_}t}{384}{\code {sighandler{\_}t}}
+\entry {struct sigaction}{386}{\code {struct sigaction}}
+\entry {sig{\_}atomic{\_}t}{401}{\code {sig{\_}atomic{\_}t}}
+\entry {sigset{\_}t}{409}{\code {sigset{\_}t}}
+\entry {struct sigaltstack}{419}{\code {struct sigaltstack}}
+\entry {struct sigstack}{420}{\code {struct sigstack}}
+\entry {struct sigvec}{421}{\code {struct sigvec}}
+\entry {struct option}{430}{\code {struct option}}
+\entry {pid{\_}t}{442}{\code {pid{\_}t}}
+\entry {union wait}{451}{\code {union wait}}
+\entry {uid{\_}t}{477}{\code {uid{\_}t}}
+\entry {gid{\_}t}{477}{\code {gid{\_}t}}
+\entry {struct passwd}{485}{\code {struct passwd}}
+\entry {struct group}{488}{\code {struct group}}
+\entry {struct utsname}{492}{\code {struct utsname}}
+\entry {va{\_}list}{516}{\code {va{\_}list}}
+\entry {ptrdiff{\_}t}{519}{\code {ptrdiff{\_}t}}
+\entry {size{\_}t}{519}{\code {size{\_}t}}

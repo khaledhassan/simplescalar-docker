@@ -1,0 +1,8 @@
+include $(..)sysdeps/unix/bsd/sstrix/ss/Makefile
+include $(..)sysdeps/unix/bsd/sstrix/Makefile
+include $(..)sysdeps/unix/common/Makefile
+include $(..)sysdeps/unix/Makefile
+include $(..)sysdeps/posix/Makefile
+include $(..)sysdeps/ss/Makefile
+include $(..)sysdeps/generic/Makefile
+sysd-Makefile-done=t
