@@ -1,0 +1,31 @@
+diff -u gcc-2.7.2.3/insn-output.c.orig gcc-2.7.2.3/insn-output.c
+--- gcc-2.7.2.3/insn-output.c.orig	2016-09-21 19:02:30.702022000 +0000
++++ gcc-2.7.2.3/insn-output.c	2016-09-21 19:03:48.486022000 +0000
+@@ -672,7 +672,7 @@
+   dslots_jump_total += 3;
+   dslots_jump_filled += 2;
+ 
+-  return "FIXME\n
++  return "FIXME\n\
+ sll\t%3,%2,26\n\
+ \tbgez\t%3,1f\n\
+ \tsll\t%M0,%L1,%2\n\
+@@ -747,7 +747,7 @@
+   dslots_jump_total += 3;
+   dslots_jump_filled += 2;
+ 
+-  return "FIXME\n
++  return "FIXME\n\
+ sll\t%3,%2,26\n\
+ \tbgez\t%3,1f\n\
+ \tsra\t%L0,%M1,%2\n\
+@@ -820,7 +820,7 @@
+   dslots_jump_total += 3;
+   dslots_jump_filled += 2;
+ 
+-  return "FIXME\n
++  return "FIXME\n\
+ sll\t%3,%2,26\n\
+ \tbgez\t%3,1f\n\
+ \tsrl\t%L0,%M1,%2\n\
+

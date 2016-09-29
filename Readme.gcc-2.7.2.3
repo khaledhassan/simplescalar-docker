@@ -1,0 +1,54 @@
+
+This is the ``READ ME'' for the GNU C/C++ v2.7.2.3 targetted towards the
+SimpleScalar architecture.  The latest GNU does a better job at implementing
+something approximating C++ than the stock 2.6.3 included in the toolkit.
+
+The modifications to v2.7.2.3 were largely derived from the 2.6.3
+modifications.  Minor tweaks were done as needed.  Be forwarned, I am
+no expert on the insides of gcc!  If you find a bug, fix it, and let me
+know.
+
+This port has only been built on Solaris/Sparc.  Your milage may vary
+on different platforms!
+
+Here is what I do to compile the port
+
+untar it
+cd gcc-2.7.2.3
+configure --target=ssbig-na-sstrix --with-gnu-as --with-gnu-ld
+	--prefix=/usr/local/ss
+make LANGUAGES="c c++" CFLAGS="-O3" CC="gcc"
+make install LANGUAGES="c c++" CFLAGS="-O3" CC="gcc"
+
+You may ofcourse have to change the install directory (--prefix) to be your
+SimpleScalar install.
+
+Additionally, I put under a directory gcc-2.7.2.3/patched/sys some fixed
+up includes.  You may want to put these in your SimpleScalar include files.
+I found that the latest gcc doesn't like some of the older gcc's non-ANSI
+modifiers.  Since they didn't seem to matter except for the odd optimization
+here and there (like knowing exit() doesn't come back so you don't have to
+worry about the register allocator..), it shouldn't matter.  Place these
+fixed up includes (actually, it's just one file) in
+/ssbig-na-sstrix/include/sys.
+
+Here is a list of the changes I remember from the stock gcc-2.7.2.3:
+
+config/ss - moved this over from 2.6.3.  Made some minor fix to it to get
+	gcc to compile.  RETURN_POPS_ARGS now takes 3 arguments
+
+configure - fixed it so it understands SS.
+
+longlong.h - moved this from 2.6.3.  Stock one was terminal.
+
+Various other minor tweaks which just let gcc know about SS.
+
+Anyway, best of luck,
+
+
+Mark Oskin
+mhoskin@ucdavis.edu
+
+
+
+

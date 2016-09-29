@@ -1,0 +1,14 @@
+diff -u gcc-2.7.2.3_orig/cplus-dem.c gcc-2.7.2.3/cplus-dem.c
+--- gcc-2.7.2.3_orig/cplus-dem.c	2016-09-29 06:09:08.875527000 +0000
++++ gcc-2.7.2.3/cplus-dem.c	2016-09-29 06:09:29.982075000 +0000
+@@ -2975,9 +2975,6 @@
+   exit (1);
+ }
+ 
+-char * malloc ();
+-char * realloc ();
+-
+ char *
+ xmalloc (size)
+      unsigned size;
+

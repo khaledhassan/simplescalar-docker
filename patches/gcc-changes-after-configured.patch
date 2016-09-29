@@ -1,0 +1,43 @@
+diff -u gcc-2.7.2.3_orig/Makefile gcc-2.7.2.3/Makefile
+--- gcc-2.7.2.3_orig/Makefile	2016-09-20 03:41:53.149088535 +0000
++++ gcc-2.7.2.3/Makefile	2016-09-20 03:42:19.713088535 +0000
+@@ -127,7 +127,7 @@
+ # This is used instead of ALL_CFLAGS when compiling with GCC_FOR_TARGET.
+ # It omits XCFLAGS, and specifies -B./.
+ # It also specifies -I./include to find, e.g., stddef.h.
+-GCC_CFLAGS=$(INTERNAL_CFLAGS) $(X_CFLAGS) $(T_CFLAGS) $(CFLAGS) -I./include
++GCC_CFLAGS=$(INTERNAL_CFLAGS) $(X_CFLAGS) $(T_CFLAGS) $(CFLAGS) -I./include -I/usr/include
+ 
+ # Special flags for compiling enquire.
+ # We disable optimization to make floating point more reliable.
+Common subdirectories: gcc-2.7.2.3_orig/config and gcc-2.7.2.3/config
+Common subdirectories: gcc-2.7.2.3_orig/cp and gcc-2.7.2.3/cp
+Common subdirectories: gcc-2.7.2.3_orig/ginclude and gcc-2.7.2.3/ginclude
+Common subdirectories: gcc-2.7.2.3_orig/objc and gcc-2.7.2.3/objc
+diff -u gcc-2.7.2.3_orig/obstack.h gcc-2.7.2.3/obstack.h
+--- gcc-2.7.2.3_orig/obstack.h	2016-09-20 03:41:53.137088535 +0000
++++ gcc-2.7.2.3/obstack.h	2016-09-20 03:43:12.225088535 +0000
+@@ -338,7 +338,7 @@
+    if (__o->next_free + sizeof (void *) > __o->chunk_limit)		\
+      _obstack_newchunk (__o, sizeof (void *));				\
+    if (!__o->alloc_failed)						\
+-     *((void **)__o->next_free)++ = ((void *)datum);			\
++     *((void **)__o->next_free++) = ((void *)datum);			\
+    (void) 0; })
+ 
+ #define obstack_int_grow(OBSTACK,datum)					\
+Common subdirectories: gcc-2.7.2.3_orig/patched and gcc-2.7.2.3/patched
+diff -u gcc-2.7.2.3_orig/protoize.c gcc-2.7.2.3/protoize.c
+--- gcc-2.7.2.3_orig/protoize.c	2016-09-20 03:41:53.169088535 +0000
++++ gcc-2.7.2.3/protoize.c	2016-09-20 03:42:34.889088535 +0000
+@@ -57,7 +57,7 @@
+ #define _POSIX_SOURCE
+ #endif
+ 
+-#include <varargs.h>
++#include <stdarg.h>
+ /* On some systems stdio.h includes stdarg.h;
+    we must bring in varargs.h first.  */
+ #include <stdio.h>
+Common subdirectories: gcc-2.7.2.3_orig/t and gcc-2.7.2.3/t
+
